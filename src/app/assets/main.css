@@ -5767,7 +5767,7 @@ input.main-search-input::placeholder {
 .intro-wrapper.style1 {
   position: relative;
   border-radius: 50px;
-  background: rgba(116, 68, 253, 0.06);
+  background: rgba(68, 253, 222, 0.06);
   margin-top: 40px;
 }
 @media (max-width: 767px) {
