@@ -53,7 +53,7 @@ const page = () => {
       {/* <Faq1></Faq1> */}
 
       {/* <Testimonial></Testimonial> */}
-      <Feature2></Feature2>
+      {/* <Feature2></Feature2> */}
       <Pricing1></Pricing1>
       <Cta1
         subtitle="Gestoru"
