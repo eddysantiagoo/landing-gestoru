@@ -1,20 +1,41 @@
 [
   {
-    "img": "/assets/images/logo/brandLogo1_1.png"
+     "img": "/assets/images/logo/1.png"
   },
   {
-    "img": "/assets/images/logo/brandLogo1_2.png" 
+     "img": "/assets/images/logo/2.png"
   },
   {
-    "img": "/assets/images/logo/brandlogo13.png"
+     "img": "/assets/images/logo/3.png"
   },
   {
-    "img": "/assets/images/logo/brandLogo1_4.png"
+     "img": "/assets/images/logo/4.png"
+  },
+  {
+     "img": "/assets/images/logo/5.png"
+  },
+  {
+     "img": "/assets/images/logo/6.png"
+  },
+  {
+     "img": "/assets/images/logo/7.png"
+  },
+  {
+     "img": "/assets/images/logo/8.png"
+  },
+  {
+     "img": "/assets/images/logo/9.png"
   },  
   {
-     "img": "/assets/images/logo/brandLogo1_5.png"
+     "img": "/assets/images/logo/10.png"
   },
   {
-     "img": "/assets/images/logo/brandlogo13.png"
-  }       
+     "img": "/assets/images/logo/11.png"
+  },
+  {
+     "img": "/assets/images/logo/12.png"
+  },
+  {
+     "img": "/assets/images/logo/13.png"
+  }
 ]
