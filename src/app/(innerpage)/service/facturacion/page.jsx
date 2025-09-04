@@ -1,15 +1,15 @@
 import BreadCumb from "../../../Components/Common/BreadCumb";
-import ServiceDetails from "../../../Components/ServiceDetails/ServiceDetails";
 import React from "react";
+import ServiceDetailsFacturacion from "./components/ServiceDetailsFacturacion";
 
 const page = () => {
   return (
     <div>
       <BreadCumb
         bgimg="/assets/images/bg/breadcumgBg.png"
-        Title="Services Details"
+        Title="Facturación Electrónica DIAN"
       ></BreadCumb>
-      <ServiceDetails></ServiceDetails>
+      <ServiceDetailsFacturacion></ServiceDetailsFacturacion>
     </div>
   );
 };

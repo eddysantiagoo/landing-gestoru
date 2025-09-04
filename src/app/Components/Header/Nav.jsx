@@ -13,21 +13,34 @@ export default function Nav({ setMobileToggle }) {
 
       <li className="menu-item-has-children">
         <Link href="/service" onClick={() => setMobileToggle(false)}>
-          Services
+          Servicios
         </Link>
         <DropDown>
           <ul>
             <li>
-              <Link href="/service" onClick={() => setMobileToggle(false)}>
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/service/service-details"
+            <Link
+                href="/service/facturacion"
                 onClick={() => setMobileToggle(false)}
               >
-                Service Details
+                Facturación Electrónica DIAN
+              </Link>
+              <Link
+                href="/service/documento-soporte"
+                onClick={() => setMobileToggle(false)}
+              >
+                Documento soporte
+              </Link>
+              <Link
+                href="/service/nomina"
+                onClick={() => setMobileToggle(false)}
+              >
+                Nómina Electrónica DIAN
+              </Link>
+              <Link
+                href="/service/sistema-de-facturacion-pos"
+                onClick={() => setMobileToggle(false)}
+              >
+                Sistema de Facturación POS
               </Link>
             </li>
           </ul>
