@@ -18,16 +18,16 @@ const page = () => {
     <div>
             <HeroBanner1
                 subtitle="<span>News!</span>Find Your Solution"
-                title="We Develop Websites, Applications, and Brands."
-                content="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,"
-                btnname="Get Started Now"
+                title="Gestión simple para tu PYME"
+                content="Te acompañamos en la gestión y organización de tu PYME con herramientas en la nube fáciles de usar. Nuestra solución te permite optimizar procesos, mantener todo en orden y dedicar más tiempo a lo realmente importante: hacer crecer tu negocio."
+                btnname="Pruebalo por 30 días"
                 btnurl="/contact"
-                btntwo="Learn More"
+                btntwo=""
                 btn2url="/about"
                 cusimg="/assets/images/intro/introProfileThumb1_1.png"
                 cusnumber="2,291"
-                cuscontent="Happy Customers"
-                rating="4.8/5"
+                cuscontent="Clientes satisfechos"
+                rating="5/5"
                 ratingcon="Rating"
                 img="/assets/images/intro/introThumb1_1.png"
             ></HeroBanner1>
