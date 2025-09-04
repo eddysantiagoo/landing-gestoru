@@ -12,10 +12,10 @@ const Pricing1 = () => {
         <div className="container">
             <div className="section-title text-center mxw-685 mx-auto">
                 <div className="subtitle">
-                    Our Pricing <Image src="/assets/images/icon/fireIcon.svg" alt="img" width={16} height={17}   />
+                    Nuestros Precios <Image src="/assets/images/icon/fireIcon.svg" alt="img" width={16} height={17}   />
                 </div>
-                <h2 className="title">Choose The Plans That Suits You!</h2>
-                <p className="text">There are many variations of passages of Lorem Ipsum available, but the majority have
+                <h2 className="title">¡Elige el Plan que se Adapte a Ti!</h2>
+                <p className="text">Ofrecemos diferentes opciones de precios para satisfacer las necesidades de tu negocio
                 </p>
             </div>
             <div className="pricing-wrapper style1">
@@ -24,12 +24,12 @@ const Pricing1 = () => {
                         <li className={`nav-item ${isActive === 'monthly' ? 'active' : ''}`} onClick={() => setIsActive('monthly')} role="presentation">
                             <button className="nav-link active" id="pills-monthly-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-monthly" type="button" role="tab" aria-controls="pills-monthly"
-                                aria-selected="true">Monthly</button>
+                                aria-selected="true">Mensual</button>
                         </li>
                         <li className={`nav-item ${isActive === 'yearly' ? 'active' : ''}`} onClick={() => setIsActive('yearly')}  role="presentation">
                             <button className="nav-link" id="pills-yearly-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-yearly" type="button" role="tab" aria-controls="pills-yearly"
-                                aria-selected="false" tabIndex="-1">Yearly</button>
+                                aria-selected="false" tabIndex="-1">Anual</button>
                         </li>
                     </ul>
                 </div>
@@ -39,50 +39,66 @@ const Pricing1 = () => {
                         <div className="row gy-5">
 
                             <PricingCard
-                                name="Basic Plan"
-                                price="$14.99"
-                                monthly="Per Month"
-                                content="There are many variations of passages of Lorem Ipsum available, but the majority"
+                                name="Plan Básico"
+                                price="$23.000"
+                                monthly="Mensual"
+                                content="Perfecto para pequeñas empresas que necesitan funcionalidades"
                                 FeatureList={[
-                                    "7 days free access",
-                                    "Maximum of 5 collaborators",
-                                    "Cloud backup 1GB",
-                                    "Maximum 50 tasks per week",
-                                    "Updates for 1 Year",
+                                    "10 Documentos electrónicos",
+                                    "Bancos",
+                                    "Reportes",
+                                    "Inventario",
+                                    "Compras",
                                 ]} 
-                                btnname="Get You Free plan"
+                                btnname="Más Información"
                                 btnurl="/pricing"
                             ></PricingCard>
 
                             <PricingCard
-                                name="Standard Plan"
-                                price="$19.99"
-                                monthly="Per Month"
-                                content="There are many variations of passages of Lorem Ipsum available, but the majority"
+                                name="Plan Emprendedor"
+                                price="$45.000"
+                                monthly="Mensual"
+                                content="Perfecto para emprendedores que buscan hacer crecer su negocio"
                                 FeatureList={[
-                                    "7 days free access",
-                                    "Maximum of 5 collaborators",
-                                    "Cloud backup 1GB",
-                                    "Maximum 50 tasks per week",
-                                    "Updates for 1 Year",
+                                    "100 Documentos electrónicos",
+                                    "Bancos",
+                                    "Reportes",
+                                    "Inventario",
+                                    "Compras",
                                 ]} 
-                                btnname="Get You Free plan"
+                                btnname="Más Información"
                                 btnurl="/pricing"
                             ></PricingCard>
 
                             <PricingCard
-                                name="Premium Plan Plan"
-                                price="$24.99"
-                                monthly="Per Month"
-                                content="There are many variations of passages of Lorem Ipsum available, but the majority"
+                                name="Plan PYME"
+                                price="$99.900"
+                                monthly="Mensual"
+                                content="Diseñado especialmente para pequeñas y medianas empresas"
                                 FeatureList={[
-                                    "7 days free access",
-                                    "Maximum of 5 collaborators",
-                                    "Cloud backup 1GB",
-                                    "Maximum 50 tasks per week",
-                                    "Updates for 1 Year",
+                                    "500 Documentos electrónicos",
+                                    "Bancos",
+                                    "Reportes",
+                                    "Inventario",
+                                    "Compras",
                                 ]} 
-                                btnname="Get You Free plan"
+                                btnname="Más Información"
+                                btnurl="/pricing"
+                            ></PricingCard>
+
+                            <PricingCard
+                                name="Plan Avanzado"
+                                price="$170.000"
+                                monthly="Mensual"
+                                content="Para empresas que necesitan el máximo volumen de documentos"
+                                FeatureList={[
+                                    "1000 Documentos electrónicos",
+                                    "Bancos",
+                                    "Reportes",
+                                    "Inventario",
+                                    "Inventario",
+                                ]} 
+                                btnname="Más Información"
                                 btnurl="/pricing"
                             ></PricingCard>
 
@@ -92,50 +108,66 @@ const Pricing1 = () => {
                         <div className="row gy-5">
 
                         <PricingCard
-                                name="Basic Plan"
-                                price="$34.99"
-                                monthly="Per Month"
-                                content="There are many variations of passages of Lorem Ipsum available, but the majority"
+                                name="Plan Básico"
+                                price="$248.400"
+                                monthly="Anual"
+                                content="Ahorra con nuestro plan anual - Perfecto para pequeñas empresas"
                                 FeatureList={[
-                                    "7 days free access",
-                                    "Maximum of 5 collaborators",
-                                    "Cloud backup 1GB",
-                                    "Maximum 50 tasks per week",
-                                    "Updates for 1 Year",
+                                    "10 Documentos electrónicos",
+                                    "Bancos",
+                                    "Reportes",
+                                    "Inventario",
+                                    "Compras",
                                 ]} 
-                                btnname="Get You Free plan"
+                                btnname="Más Información"
                                 btnurl="/pricing"
                             ></PricingCard>
 
                             <PricingCard
-                                name="Standard Plan"
-                                price="$64.99"
-                                monthly="Per Month"
-                                content="There are many variations of passages of Lorem Ipsum available, but the majority"
+                                name="Plan Emprendedor"
+                                price="$486.000"
+                                monthly="Anual"
+                                content="Plan anual para emprendedores - Ahorra más con el pago anual"
                                 FeatureList={[
-                                    "7 days free access",
-                                    "Maximum of 5 collaborators",
-                                    "Cloud backup 1GB",
-                                    "Maximum 50 tasks per week",
-                                    "Updates for 1 Year",
+                                    "100 Documentos electrónicos",
+                                    "Bancos",
+                                    "Reportes",
+                                    "Inventario",
+                                    "Compras",
                                 ]} 
-                                btnname="Get You Free plan"
+                                btnname="Más Información"
                                 btnurl="/pricing"
                             ></PricingCard>
 
                             <PricingCard
-                                name="Premium Plan Plan"
-                                price="$84.99"
-                                monthly="Per Month"
-                                content="There are many variations of passages of Lorem Ipsum available, but the majority"
+                                name="Plan PYME"
+                                price="$1.078.920"
+                                monthly="Anual"
+                                content="Plan anual PYME - Máximo descuento para medianas empresas"
                                 FeatureList={[
-                                    "7 days free access",
-                                    "Maximum of 5 collaborators",
-                                    "Cloud backup 1GB",
-                                    "Maximum 50 tasks per week",
-                                    "Updates for 1 Year",
+                                    "500 Documentos electrónicos",
+                                    "Bancos",
+                                    "Reportes",
+                                    "Inventario",
+                                    "Compras",
                                 ]} 
-                                btnname="Get You Free plan"
+                                btnname="Más Información"
+                                btnurl="/pricing"
+                            ></PricingCard>
+
+                            <PricingCard
+                                name="Plan Avanzado"
+                                price="$1.836.000"
+                                monthly="Anual"
+                                content="Plan anual avanzado - Para empresas que manejan alto volumen"
+                                FeatureList={[
+                                    "1000 Documentos electrónicos",
+                                    "Bancos",
+                                    "Reportes",
+                                    "Inventario",
+                                    "Inventario",
+                                ]} 
+                                btnname="Más Información"
                                 btnurl="/pricing"
                             ></PricingCard>                            
 
