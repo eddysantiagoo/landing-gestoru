@@ -12,8 +12,8 @@ const Feature1 = () => {
             data-wow-delay=".2s"
           >
             <SectionTitle
-              SubTitle="¿Por qué elegirnos?"
-              Title="Gestoru te ofrece todas las herramientas para tu PYME"
+              SubTitle="Herramientas que tendrás a disposición en Gestoru"
+              Title="Una serie de módulos diseñados para llevar tu empresa a otro nivel"
             />
           </div>
 

@@ -1,32 +1,32 @@
 [
   {
     "icon": "/assets/images/icon/serviceIcon3_1.svg",
-    "title": "Software Features",
-    "desc": "There are many variations of passages of Lorem Ipsum available, but majority have suffered alteration in some form"   
+    "title": "Facturación Electrónica DIAN",
+    "desc": "Podrás hacer tu facturación electrónica ante la DIAN cumpliendo con todos los estándares de calidad exigidos por la ley de una forma bastante sencilla y veloz."   
   },
   {
     "icon": "/assets/images/icon/serviceIcon3_2.svg",
-    "title": "Subscription Plans",
-    "desc": "There are many variations of passages of Lorem Ipsum available, but majority have suffered alteration in some form"   
+    "title": "Software Administrativo ERP",
+    "desc": "Potente sistema que contiene módulos especializados para compras, inventarios, facturación, cotizaciones, pagos recurrentes, reportes, conexión con bancos."   
   },
   {
     "icon": "/assets/images/icon/serviceIcon3_3.svg",
-    "title": "Customization Option",
-    "desc": "There are many variations of passages of Lorem Ipsum available, but majority have suffered alteration in some form"  
+    "title": "Nómina Electrónica DIAN",
+    "desc": "Adaptado, certificado y diseñado para el cumplimiento de la normativa establecido por la DIAN en el proyecto de resolución referente a Nómina Electrónica."  
   },
   {
     "icon": "/assets/images/icon/serviceIcon3_5.svg",
-    "title": "Choose a App",
-    "desc": "There are many variations of passages of Lorem Ipsum available, but majority have suffered alteration in some form"  
+    "title": "CRM Integrado",
+    "desc": "Sistema único en el país pensado para empresas del sector de compra y venta de autopartes que permiten administrar la comunicación con tus clientes y tus proveedores."  
   },
   {
     "icon": "/assets/images/icon/serviceIcon3_5.svg",
-    "title": "Clean Modern Code",
-    "desc": "There are many variations of passages of Lorem Ipsum available, but majority have suffered alteration in some form"
+    "title": "Sistema POS",
+    "desc": "Completamente integrado, en línea y en tiempo real, con el resto de módulos, incluyendo los módulos de bancos, reportes, gestión de clientes y robusto manejo de inventarios."
   },
   {
     "icon": "/assets/images/icon/serviceIcon3_6.svg",
-    "title": "User Interactive",
-    "desc": "There are many variations of passages of Lorem Ipsum available, but majority have suffered alteration in some form"   
+    "title": "Tracking Para Envíos",
+    "desc": "Haz el seguimiento de todos los envíos realizados por las diferentes empresas de logística nacional e internacional con las que operas, tendrás a la mano un rastreo eficiente de cada envío."   
   }    
 ]
