@@ -1,114 +1,138 @@
 import Image from "next/image";
+import Link from "next/link";
+import About4 from "../../../../Components/About/About4";
+import Choose3 from "../../../../Components/Choose/Choose3";
 
 const ServiceDetailsFacturacion = () => {
-    return (
-        <div className="service-details-section">
-        <div className="service-details-container-wrapper section-padding fix">
+  const featureList = [
+    "Personalización completa de facturas",
+    "Envío automatizado por correo electrónico",
+    "Formato PDF descargable",
+    "Cumplimiento 100% DIAN",
+    "Acompañamiento en el proceso de registro",
+    "Transformación digital eficiente",
+  ];
+
+  return (
+    <div className="service-details-section">
+      {/* About Style Section */}
+      <section className="about-section  fix">
+        <About4
+          img1="/assets/images/about/aboutThumb1_1.png"
+          img2="/assets/images/about/aboutThumb1_2.png"
+          title="Facturación Electrónica"
+          content=" Con Gestoru podrás hacer tus facturas electrónicas de
+            manera sencilla, ágil y con un soporte continuo.
+             Personaliza tu factura con tu logo y datos de contacto.
+             Una vez configurado, tus facturas quedarán listas para
+           el envío automático."
+          FeatureList={featureList}
+          btnname="Contactar por WhatsApp"
+          btnurl="https://wa.me/1234567890?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20Gestoru"
+        />
+      </section>
+
+      {/* Additional Information Section */}
+      <section className="about-section section-padding pt-0 fix">
+        <section className="wcu-section section-padding fix">
+          <div className="wcu-container-wrapper style3">
             <div className="container">
-                <div className="service-details-wrapper">
-                    <div className="main-thumb img-custom-anim-right wow fadeInLeft" data-wow-delay=".3s">
-                    <Image src="/assets/images/services/servicesDetailsThumb1_1.jpg" alt="img" width={1410} height={646}   />
-                    </div>
-                    <h2 className="title wow fadeInUp" data-wow-delay=".3s">Factura Electrónica - Cumplimos al 100% los requisitos de la DIAN</h2>
-                    <div className="tagcloud">
-                        <div className="tag">
-                            <a href="#">DIAN</a>
+              <div className="wcu-wrapper style3">
+                <div className="row gy-5 gx-60">
+                  <div className="col-xl-6">
+                    <div className="wcu-content">
+                      <div className="section-title">
+                        <div
+                          className="subtitle wow fadeInUp"
+                          data-wow-delay=".2s"
+                        >
+                          Gestoru - Facturación{" "}
+                          <Image
+                            src="/assets/images/icon/fireIcon.svg"
+                            alt="img"
+                            width={16}
+                            height={17}
+                          />
                         </div>
-                        <div className="tag">
-                            <a href="#">Facturación</a>
-                        </div>
-                        <div className="tag">
-                            <a href="#">Electrónica</a>
-                        </div>
-                        <div className="tag">
-                            <a href="#">Automatizada</a>
-                        </div>
-                    </div>
-                    <div className="details-box1">
-                        <h3 className="subtitle wow fadeInUp" data-wow-delay=".3s">
-                            Visión General del Servicio
-                        </h3>
-                        <div className="row gy-3">
-                            <div className="col-xl-7">
-                                <p className="text wow fadeInUp" data-wow-delay=".3s">Con Gestoru podrás hacer tus facturas electrónicas de manera sencilla, ágil y con un soporte contínuo. Podrás personalizar tu factura con tu logo y datos de contacto. Este proceso solo lo harás una vez y de ahí en adelante tus facturas quedarán listas para el envío.</p>
-                            </div>
-                            <div className="col-xl-5">
-                                <p className="text wow fadeInUp" data-wow-delay=".5s">Una de las grandes ventajas es que al enviar tu factura llegará directamente al email de tu cliente y será en formato PDF. También tendrás un historial para tener el control de las facturas que envías.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="details-box2">
-                        <h3 className="subtitle wow fadeInUp" data-wow-delay=".3s">
-                            Beneficios de Nuestro Servicio
-                        </h3>
-                        <div className="row gy-3">
-                            <div className="col-xl-6">
-                                <div className="feature-wrapper wow fadeInUp" data-wow-delay=".3s">
-                                    <ul className="feature">
-                                        <li>Personalización de la factura</li>
-                                        <li>Envío automatizado por correo</li>
-                                        <li>Formato PDF descargable</li>
-                                    </ul>
-                                    <ul className="feature">
-                                        <li>Eficiencia en los procesos de generación</li>
-                                        <li>Acompañamiento en el proceso ante la DIAN</li>
-                                        <li>Transformación digital eficiente</li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <div className="col-xl-6">
-                                <div className="progress-wrap">
-                                    <div className="progress-meta">
-                                        <div className="title">Cumplimiento DIAN</div>
-                                        <div className="percentage">100%</div>
-                                    </div>
-                                    <div className="progress-container">
-                                        <div className="progress-bar" >
-                                           
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="progress-wrap mb-0">
-                                    <div className="progress-meta">
-                                        <div className="title">Automatización</div>
-                                        <div className="percentage">98%</div>
-                                    </div>
-                                    <div className="progress-container">
-                                        <div className="progress-bar" >
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="thumb-wrapper">
-                            <div className="row gy-3">
-                                <div className="col-xl-6">
-                                    <div className="thumb img-custom-anim-left wow fadeInUp" data-wow-delay=".3s">
-                                    <Image src="/assets/images/services/servicesDetailsThumb1_2.jpg" alt="img" width={690} height={328}   />
-                                        </div>
-                                </div>
-                                <div className="col-xl-6">
-                                    <div className="thumb  img-custom-anim-left wow fadeInUp" data-wow-delay=".3s">
-                                    <Image src="/assets/images/services/servicesDetailsThumb1_3.jpg" alt="img" width={690} height={328}   />
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                        <p className="text1 wow fadeInUp" data-wow-delay=".3s">
-                            Te acompañaremos en todo el proceso de registro para implementar la Factura Electrónica en tu empresa. ¡Si aún no lo has hecho! Una vez estés habilitado para emitir facturas electrónicas ante la DIAN, con Gestoru podrás hacer emisión, recepción y almacenamiento de todas las facturas electrónicas.
+                        <h2 className="title wow fadeInUp" data-wow-delay=".4s">
+                          Acompañamiento Completo
+                        </h2>
+                        <p className="text1 wow fadeInUp" data-wow-delay=".6s">
+                          Te acompañaremos en todo el proceso de registro para
+                          implementar la Factura Electrónica en tu empresa. Una
+                          vez estés habilitado para emitir facturas electrónicas
+                          ante la DIAN, con Gestoru podrás hacer emisión,
+                          recepción y almacenamiento de todas las facturas
+                          electrónicas.
                         </p>
-                        <p className="text2 wow fadeInUp" data-wow-delay=".5s">
-                            Obtén informes y control absoluto de tu información. La transformación digital eficiente en tu empresa comienza con la implementación correcta de la facturación electrónica, cumpliendo al 100% con los requisitos establecidos por la DIAN.
+                        <p className="text2 wow fadeInUp" data-wow-delay=".8s">
+                          Una de las grandes ventajas es que al enviar tu
+                          factura llegará directamente al email de tu cliente en
+                          formato PDF. También tendrás un historial completo
+                          para tener el control de todas las facturas que
+                          envías.
                         </p>
+                      </div>
+                      <Link
+                        className="theme-btn rounded-5 wow fadeInUp"
+                        data-wow-delay=".4s"
+                        href="https://wa.me/573135219304?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20la%20facturación%20electrónica%20de%20Gestoru"
+                      >
+                        Contactar por WhatsApp
+                        <svg
+                          className="ms-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <g clipPath="url(#clip0_190_64)">
+                            <path
+                              d="M11.6118 3.61182L10.8991 4.32454L14.0706 7.49603H0V8.50398H14.0706L10.8991 11.6754L11.6118 12.3882L16 7.99997L11.6118 3.61182Z"
+                              fill="white"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_190_64">
+                              <rect width="16" height="16" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </Link>
                     </div>
+                  </div>
+                  <div className="col-xl-6">
+                    <div className="wcu-thumb">
+                      <div
+                        className="main-thumb img-custom-anim-left wow fadeInUp"
+                        data-wow-delay=".4s"
+                      >
+                        <Image
+                          src="/assets/images/wcu/wcuThumb3_1.png"
+                          alt="img"
+                          width={386}
+                          height={503}
+                        />
+                      </div>
+                      <div className="thumb2">
+                        <Image
+                          src="/assets/images/wcu/wcuThumb3_2.png"
+                          alt="img"
+                          width={558}
+                          height={340}
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
+          </div>
+        </section>
+      </section>
     </div>
-
-    );
+  );
 };
 
 export default ServiceDetailsFacturacion;
