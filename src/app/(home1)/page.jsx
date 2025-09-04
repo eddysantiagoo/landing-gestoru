@@ -49,8 +49,9 @@ const page = () => {
       ></About1>
 
       <Feature1></Feature1>
-      <Counter1></Counter1>
+
       <Faq1></Faq1>
+
       <Testimonial></Testimonial>
       <Feature2></Feature2>
       <Pricing1></Pricing1>
@@ -62,7 +63,7 @@ const page = () => {
         btnurl2="https://www.apple.com/store"
         img="/assets/images/cta/ctaThumb1_1.png"
       ></Cta1>
-      <Blog1></Blog1>
+
     </div>
   );
 };
