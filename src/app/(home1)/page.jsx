@@ -17,7 +17,7 @@ const page = () => {
   return (
     <div>
       <HeroBanner1
-        subtitle="<span>News!</span>Find Your Solution"
+        subtitle="<span>Bienvenido/a</span>Soluciones para tu PYME"
         title="Gestión simple para tu PYME"
         content="Te acompañamos en la gestión y organización de tu PYME con herramientas en la nube fáciles de usar. Nuestra solución te permite optimizar procesos, mantener todo en orden y dedicar más tiempo a lo realmente importante: hacer crecer tu negocio."
         btnname="Pruebalo por 30 días"
@@ -50,15 +50,15 @@ const page = () => {
 
       <Feature1></Feature1>
 
-      <Faq1></Faq1>
+      {/* <Faq1></Faq1> */}
 
-      <Testimonial></Testimonial>
+      {/* <Testimonial></Testimonial> */}
       <Feature2></Feature2>
       <Pricing1></Pricing1>
       <Cta1
-        subtitle="Our App"
-        title="Download our app and start your free trail to get started today!"
-        content="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised"
+        subtitle="Gestoru"
+        title="Pruebalo por 30 días"
+        content="¡Comienza hoy y disfruta de 30 días gratis sin necesidad de tarjeta! Descubre cómo Gestoru puede transformar la gestión de tu negocio."
         btnurl1="https://play.google.com/store"
         btnurl2="https://www.apple.com/store"
         img="/assets/images/cta/ctaThumb1_1.png"
