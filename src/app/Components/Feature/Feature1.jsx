@@ -48,7 +48,7 @@ const Feature1 = () => {
                     data-wow-delay=".6s"
                   >
                     <Image
-                      src="/assets/images/wcu/wcuThumb1_1.png"
+                      src="/assets/images/wcu/wcuThumb1_1.webp"
                       alt="Gestoru"
                       width={376}
                       height={342}
