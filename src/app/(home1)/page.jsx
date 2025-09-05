@@ -29,7 +29,7 @@ const page = () => {
         cuscontent="Clientes satisfechos"
         rating="5/5"
         ratingcon="Rating"
-        img="/assets/images/intro/introThumb1_1.png"
+        img="/assets/images/intro/introThumb1_1.webp"
       ></HeroBanner1>
       <Brand1></Brand1>
       <About1
