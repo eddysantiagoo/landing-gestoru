@@ -61,7 +61,7 @@ const page = () => {
         content="¡Comienza hoy y disfruta de 30 días gratis sin necesidad de tarjeta! Descubre cómo Gestoru puede transformar la gestión de tu negocio."
         btnurl1="https://play.google.com/store"
         btnurl2="https://www.apple.com/store"
-        img="/assets/images/cta/ctaThumb1_1.png"
+        img="/assets/images/cta/ctaThumb1_1.webp"
       ></Cta1>
 
     </div>
