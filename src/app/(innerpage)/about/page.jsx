@@ -20,7 +20,7 @@ const page = () => {
       ></BreadCumb>
 
       <About4
-        img1="/assets/images/about/aboutThumb1_1.png"
+        img1="/assets/images/about/aboutThumb1_1.webp"
         img2="/assets/images/about/aboutThumb1_2.png"
         subtitle="Gestoru"
         title="Quiénes Somos"
