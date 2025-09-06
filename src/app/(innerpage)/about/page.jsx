@@ -31,7 +31,7 @@ const page = () => {
       />
 
       <Choose2
-        img1="/assets/images/wcu/wcuThumb2_1.png"
+        img1="/assets/images/wcu/wcuThumb2_1.webp"
         img2="/assets/images/wcu/wcuThumb2_2.png"
         img3="/assets/images/wcu/wcuThumb2_3.png"
         subtitle="Soluciones Personalizadas"
