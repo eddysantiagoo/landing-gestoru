@@ -17,9 +17,9 @@ const ServiceDetailDoumento = () => {
       {/* About Style Section */}
       <section className="about-section fix">
         <About4
-          img1="/assets/images/about/aboutThumb1_1.png"
+          img1="/assets/images/services/documentos.webp"
           img2="/assets/images/about/aboutThumb1_2.png"
-          title="Documento Soporte DIAN 2022"
+          title="Documento Soporte DIAN" 
           content="Es el documento que usas para acreditar la compra de un bien o servicio, y que debe generar el comprador cuando hace transacciones con un proveedor que no está obligado a expedir factura de venta o documento equivalente."
           FeatureList={featureList}
           btnname="Contactar por WhatsApp"
