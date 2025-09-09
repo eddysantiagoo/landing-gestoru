@@ -17,7 +17,7 @@ const ServiceDetailNomina = () => {
       {/* About Style Section */}
       <section className="about-section fix">
         <About4
-          img1="/assets/images/about/aboutThumb1_1.png"
+          img1="/assets/images/services/nomina.webp"
           img2="/assets/images/about/aboutThumb1_2.png"
           title="Nómina Electrónica"
           content="Implementa fácilmente la Nómina Electrónica en tu empresa. Adaptado, certificado y diseñado para el cumplimiento de la normativa establecido por la DIAN en el proyecto de resolución referente a Nómina Electrónica."
