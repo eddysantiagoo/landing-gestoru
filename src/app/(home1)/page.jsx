@@ -33,7 +33,7 @@ const page = () => {
       ></HeroBanner1>
       <Brand1></Brand1>
       <About1
-        img1="/assets/images/about/aboutThumb1_1.webp"
+        img1="/assets/images/about/aboutThumb1_1_home.webp"
         img2="/assets/images/about/aboutThumb1_2.png"
         subtitle="Gestoru"
         title="Gestión simple y en la nube para tu negocio"
