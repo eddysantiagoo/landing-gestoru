@@ -18,7 +18,7 @@ const ServiceDetailsFacturacion = () => {
       {/* About Style Section */}
       <section className="about-section  fix">
         <About4
-          img1="/assets/images/services/aboutThumb1_1.png"
+          img1="/assets/images/services/facturacion.webp"
           img2="/assets/images/about/aboutThumb1_2.png"
           title="Facturación Electrónica"
           content=" Con Gestoru podrás hacer tus facturas electrónicas de
