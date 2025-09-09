@@ -5913,11 +5913,13 @@ input.main-search-input::placeholder {
 }
 .intro-wrapper.style1 .intro-thumb .main-thumb {
   position: relative;
+  right: 140px;
   z-index: 3;
 }
 @media (max-width: 767px) {
   .intro-wrapper.style1 .intro-thumb .main-thumb {
     max-width: 100%;
+    right: 0;
   }
 }
 .intro-wrapper.style1 .intro-thumb .thumbShape1 {
