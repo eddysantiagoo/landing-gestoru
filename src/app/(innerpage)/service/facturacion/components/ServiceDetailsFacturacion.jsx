@@ -109,7 +109,7 @@ const ServiceDetailsFacturacion = () => {
                         data-wow-delay=".4s"
                       >
                         <Image
-                          src="/assets/images/wcu/wcuThumb3_1.png"
+                          src="/assets/images/services/facturacion-2.webp"
                           alt="img"
                           width={386}
                           height={503}
