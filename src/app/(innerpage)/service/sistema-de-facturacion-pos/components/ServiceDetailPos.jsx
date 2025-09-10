@@ -17,7 +17,7 @@ const ServiceDetailsPos = () => {
       {/* About Style Section */}
       <section className="about-section fix">
         <About4
-          img1="/assets/images/about/aboutThumb1_1.png"
+          img1="/assets/images/services/pos-2.webp"
           img2="/assets/images/about/aboutThumb1_2.png"
           title="Sistema POS, Facturación para Negocios"
           content="Con Gestoru tendrás un sistema que te permite agilizar las tareas relacionadas con la venta, facturación y el cobro de productos o servicios en tu negocio local. Tu inventario está siempre actualizado y digitalizado, controlando la entrada y salida de todos tus productos en tiempo real."
@@ -95,7 +95,7 @@ const ServiceDetailsPos = () => {
                         data-wow-delay=".4s"
                       >
                         <Image
-                          src="/assets/images/wcu/wcuThumb3_1.png"
+                          src="/assets/images/services/pos.webp"
                           alt="img"
                           width={386}
                           height={503}
