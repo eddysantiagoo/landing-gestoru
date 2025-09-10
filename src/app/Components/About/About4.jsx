@@ -18,7 +18,7 @@ const About4 = ({img1,img2,subtitle,title,content,FeatureList,btnname,btnurl}) =
                                     <div className="thumbShape2 d-none d-xxl-block cir36">
                                     <Image src="/assets/images/shape/aboutThumbShape1_2.png" alt="img" width={24} height={24}   />
                                         </div>
-                                    <div className="thumbShape3 d-none d-xxl-block cir36 float-bob-y">
+                                    <div className="thumbShape3 d-none d-xxl-block">
                                     <Image src="/assets/images/shape/aboutThumbShape1_3.png" alt="img" width={200} height={200}   />
                                        </div>
                                     <div className="thumbShape4 d-none d-xxl-block cir36">
@@ -27,9 +27,9 @@ const About4 = ({img1,img2,subtitle,title,content,FeatureList,btnname,btnurl}) =
                                     <div className="main-thumb">
                                     <Image src={img1} alt="img" width={436} height={530}   />
                                     </div>
-                                    <div className="absolute-thumb float-bob-x">
+                                    {/* <div className="absolute-thumb float-bob-x">
                                     <Image src={img2} alt="img" width={216} height={108}   />
-                                    </div>
+                                    </div> */}
     
                                 </div>
                             </div>

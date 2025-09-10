@@ -47,12 +47,6 @@ const ServiceDetailsFacturacion = () => {
                           data-wow-delay=".2s"
                         >
                           Gestoru - Facturación{" "}
-                          <Image
-                            src="/assets/images/icon/fireIcon.svg"
-                            alt="img"
-                            width={16}
-                            height={17}
-                          />
                         </div>
                         <h2 className="title wow fadeInUp" data-wow-delay=".4s">
                           Acompañamiento Completo

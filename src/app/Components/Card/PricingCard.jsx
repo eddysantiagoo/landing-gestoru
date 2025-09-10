@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const PricingCard = ({name,price,monthly,content,FeatureList,btnname,btnurl}) => {
     return (
-    <div className="col-xl-4 col-md-6">
+    <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
         <div className="pricing-card style1">
             <div className="pricing-card-header">
                 <h6>{name}</h6>

@@ -34,7 +34,6 @@ const page = () => {
       <Brand1></Brand1>
       <About1
         img1="/assets/images/about/aboutThumb1_1_home.webp"
-        img2="/assets/images/about/aboutThumb1_2.png"
         subtitle="Gestoru"
         title="Gestión simple y en la nube para tu negocio"
         content="En Gestoru ayudamos a organizar y estructurar tu PYME con herramientas tecnológicas que integran facturación electrónica, nómina, POS, reportes, inventario y mucho más. Todo en un solo software para que tu empresa crezca sin complicaciones."
@@ -59,8 +58,9 @@ const page = () => {
         subtitle="Gestoru"
         title="Pruebalo por 30 días"
         content="¡Comienza hoy y disfruta de 30 días gratis sin necesidad de tarjeta! Descubre cómo Gestoru puede transformar la gestión de tu negocio."
-        btnurl1="https://play.google.com/store"
-        btnurl2="https://www.apple.com/store"
+        btnurl1="/about"
+        btntext1="Conocenos"
+        btnurl2="https://api.whatsapp.com/send?phone=+573226501735&text=Hola,%20quiero%20una%20asesor%C3%ADa%20sobre%20Gestoru"
         img="/assets/images/cta/ctaThumb1_1.webp"
       ></Cta1>
 

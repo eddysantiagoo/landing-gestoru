@@ -12,7 +12,7 @@ const Pricing1 = () => {
         <div className="container">
             <div className="section-title text-center mxw-685 mx-auto">
                 <div className="subtitle">
-                    Nuestros Precios <Image src="/assets/images/icon/fireIcon.svg" alt="img" width={16} height={17}   />
+                    Nuestros Precios 
                 </div>
                 <h2 className="title">¡Elige el Plan que se Adapte a Ti!</h2>
                 <p className="text">Ofrecemos diferentes opciones de precios para satisfacer las necesidades de tu negocio
@@ -22,21 +22,21 @@ const Pricing1 = () => {
                 <div className="tab-section d-flex justify-content-center align-items-center">
                     <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
                         <li className={`nav-item ${isActive === 'monthly' ? 'active' : ''}`} onClick={() => setIsActive('monthly')} role="presentation">
-                            <button className="nav-link active" id="pills-monthly-tab" data-bs-toggle="pill"
+                            <button className={`nav-link ${isActive === 'monthly' ? 'active' : ''}`} id="pills-monthly-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-monthly" type="button" role="tab" aria-controls="pills-monthly"
-                                aria-selected="true">Mensual</button>
+                                aria-selected={isActive === 'monthly'}>Mensual</button>
                         </li>
                         <li className={`nav-item ${isActive === 'yearly' ? 'active' : ''}`} onClick={() => setIsActive('yearly')}  role="presentation">
-                            <button className="nav-link" id="pills-yearly-tab" data-bs-toggle="pill"
+                            <button className={`nav-link ${isActive === 'yearly' ? 'active' : ''}`} id="pills-yearly-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-yearly" type="button" role="tab" aria-controls="pills-yearly"
-                                aria-selected="false" tabIndex="-1">Anual</button>
+                                aria-selected={isActive === 'yearly'} tabIndex={isActive === 'yearly' ? "0" : "-1"}>Anual</button>
                         </li>
                     </ul>
                 </div>
                 <div className="tab-content" id="pills-tabContent">
-                    <div className={`tab-pane ${isActive === 'monthly' ? 'active' : ''}`} id="pills-monthly" role="tabpanel"
+                    <div className={`tab-pane fade ${isActive === 'monthly' ? 'show active' : ''}`} id="pills-monthly" role="tabpanel"
                         aria-labelledby="pills-monthly-tab">
-                        <div className="row gy-5">
+                        <div className="row gy-4 gx-3 justify-content-center align-items-stretch">
 
                             <PricingCard
                                 name="Plan Básico"
@@ -104,8 +104,8 @@ const Pricing1 = () => {
 
                         </div>
                     </div>
-                    <div className={`tab-pane ${isActive === 'yearly' ? 'active' : ''}`} id="pills-yearly" role="tabpanel" aria-labelledby="pills-yearly-tab">
-                        <div className="row gy-5">
+                    <div className={`tab-pane fade ${isActive === 'yearly' ? 'show active' : ''}`} id="pills-yearly" role="tabpanel" aria-labelledby="pills-yearly-tab">
+                        <div className="row gy-4 gx-3 justify-content-center align-items-stretch">
 
                         <PricingCard
                                 name="Plan Básico"

@@ -19,7 +19,7 @@ const HeroBanner1 = ({subtitle,title,content,btnname,btnurl,btntwo,btn2url,cusim
                                 <div className="intro-content">
                                     <div className="intro-section-title">
                                         <div className="intro-subtitle">
-                                            {parse(subtitle)} <Image src="/assets/images/icon/fireIcon.svg" alt="img" width={16} height={17}   /> 
+                                            {parse(subtitle)} 
                                         </div>
                                         <h1 className="intro-title wow fadeInUp" data-wow-delay=".2s">{title}</h1>
                                         <p className="intro-desc wow fadeInUp" data-wow-delay=".4s">{content}</p>
@@ -41,7 +41,7 @@ const HeroBanner1 = ({subtitle,title,content,btnname,btnurl,btntwo,btn2url,cusim
                                             </svg>
 
                                         </Link>
-                                        <Link className="theme-btn style2 wow fadeInUp" data-wow-delay=".2s"
+                                        {/* <Link className="theme-btn style2 wow fadeInUp" data-wow-delay=".2s"
                                             href={btn2url}>{btntwo}
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 viewBox="0 0 16 16" fill="none">
@@ -56,7 +56,7 @@ const HeroBanner1 = ({subtitle,title,content,btnname,btnurl,btntwo,btn2url,cusim
                                                     </clipPath>
                                                 </defs>
                                             </svg>
-                                        </Link>
+                                        </Link> */}
                                     </div>
                                     <div className="fancy-box-wrapper style1">
                                         <div className="fancy-box style1 wow fadeInUp" data-wow-delay=".2s">
@@ -107,8 +107,7 @@ const HeroBanner1 = ({subtitle,title,content,btnname,btnurl,btntwo,btn2url,cusim
                                 <div className="intro-thumb">
                                     <div className="thumbShape1"><Image src="/assets/images/shape/introThumbShape1_1.png" alt="img" width={624} height={624}   /></div>
                                     <div className="thumbShape2"><Image src="/assets/images/shape/introThumbShape1_2.png" alt="img" width={536} height={537}   /></div>
-                                            <Image className="main-thumb img-custom-anim-right wow fadeInUp"  src={img} alt="img" width={726} height={709}   />
-                                   
+                                            <Image className="main-thumb img-custom-anim-right wow fadeInUp"  src={img} alt="img" width={726} height={709} sizes='(max-width: 767px) 100vw'  />
                                 </div>
                             </div>
                         </div>
