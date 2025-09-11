@@ -23,7 +23,7 @@ const ServiceDetailDoumento = () => {
           content="Es el documento que usas para acreditar la compra de un bien o servicio, y que debe generar el comprador cuando hace transacciones con un proveedor que no está obligado a expedir factura de venta o documento equivalente."
           FeatureList={featureList}
           btnname="Contactar por WhatsApp"
-          btnurl="https://wa.me/573135219304?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20el%20documento%20soporte%20de%20Gestoru"
+          btnurl="https://wa.me/573226501735?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20el%20documento%20soporte%20de%20Gestoru"
         />
       </section>
 
@@ -62,7 +62,7 @@ const ServiceDetailDoumento = () => {
                       <Link
                         className="theme-btn rounded-5 wow fadeInUp"
                         data-wow-delay=".4s"
-                        href="https://wa.me/573135219304?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20el%20documento%20soporte%20de%20Gestoru"
+                        href="https://wa.me/573226501735?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20el%20documento%20soporte%20de%20Gestoru"
                       >
                         Contactar por WhatsApp
                         <svg

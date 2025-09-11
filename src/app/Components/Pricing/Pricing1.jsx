@@ -51,7 +51,7 @@ const Pricing1 = () => {
                                     "Compras",
                                 ]} 
                                 btnname="Más Información"
-                                btnurl="https://api.whatsapp.com/send/?phone=573135219304&text=Hola, me interesa conocer mas sobre el plan básico de Gestoru"
+                                btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan básico de Gestoru"
                             ></PricingCard>
 
                             <PricingCard
@@ -67,7 +67,7 @@ const Pricing1 = () => {
                                     "Compras",
                                 ]} 
                                 btnname="Más Información"
-                                btnurl="https://api.whatsapp.com/send/?phone=573135219304&text=Hola, me interesa conocer mas sobre el plan Emprendedor de Gestoru"
+                                btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan Emprendedor de Gestoru"
                             ></PricingCard>
 
                             <PricingCard
@@ -83,7 +83,7 @@ const Pricing1 = () => {
                                     "Compras",
                                 ]} 
                                 btnname="Más Información"
-                                btnurl="https://api.whatsapp.com/send/?phone=573135219304&text=Hola, me interesa conocer mas sobre el plan PYME de Gestoru"
+                                btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan PYME de Gestoru"
                             ></PricingCard>
 
                             <PricingCard
@@ -99,7 +99,7 @@ const Pricing1 = () => {
                                     "Inventario",
                                 ]} 
                                 btnname="Más Información"
-                                btnurl="https://api.whatsapp.com/send/?phone=573135219304&text=Hola, me interesa conocer mas sobre el plan Avanzado de Gestoru"
+                                btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan Avanzado de Gestoru"
                             ></PricingCard>
 
                         </div>
@@ -120,7 +120,7 @@ const Pricing1 = () => {
                                     "Compras",
                                 ]} 
                                 btnname="Más Información"
-                                btnurl="https://api.whatsapp.com/send/?phone=573135219304&text=Hola, me interesa conocer mas sobre el plan básico de Gestoru"
+                                btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan básico de Gestoru"
                             ></PricingCard>
 
                             <PricingCard
@@ -136,7 +136,7 @@ const Pricing1 = () => {
                                     "Compras",
                                 ]} 
                                 btnname="Más Información"
-                                btnurl="https://api.whatsapp.com/send/?phone=573135219304&text=Hola, me interesa conocer mas sobre el plan Emprendedor de Gestoru"
+                                btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan Emprendedor de Gestoru"
                             ></PricingCard>
 
                             <PricingCard
@@ -152,7 +152,7 @@ const Pricing1 = () => {
                                     "Compras",
                                 ]} 
                                 btnname="Más Información"
-                                btnurl="https://api.whatsapp.com/send/?phone=573135219304&text=Hola, me interesa conocer mas sobre el plan PYME de Gestoru"
+                                btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan PYME de Gestoru"
                             ></PricingCard>
 
                             <PricingCard
@@ -168,7 +168,7 @@ const Pricing1 = () => {
                                     "Inventario",
                                 ]} 
                                 btnname="Más Información"
-                                btnurl="https://api.whatsapp.com/send/?phone=573135219304&text=Hola, me interesa conocer mas sobre el plan Avanzado de Gestoru"
+                                btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan Avanzado de Gestoru"
                             ></PricingCard>
 
                         </div>

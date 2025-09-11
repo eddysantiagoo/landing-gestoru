@@ -23,7 +23,7 @@ const ServiceDetailNomina = () => {
           content="Implementa fácilmente la Nómina Electrónica en tu empresa. Adaptado, certificado y diseñado para el cumplimiento de la normativa establecido por la DIAN en el proyecto de resolución referente a Nómina Electrónica."
           FeatureList={featureList}
           btnname="Contactar por WhatsApp"
-          btnurl="https://wa.me/573135219304?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20la%20nómina%20electrónica%20de%20Gestoru"
+          btnurl="https://wa.me/573226501735?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20la%20nómina%20electrónica%20de%20Gestoru"
         />
       </section>
 
@@ -62,7 +62,7 @@ const ServiceDetailNomina = () => {
                       <Link
                         className="theme-btn rounded-5 wow fadeInUp"
                         data-wow-delay=".4s"
-                        href="https://wa.me/573135219304?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20la%20nómina%20electrónica%20de%20Gestoru"
+                        href="https://wa.me/573226501735?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20la%20nómina%20electrónica%20de%20Gestoru"
                       >
                         Contactar por WhatsApp
                         <svg

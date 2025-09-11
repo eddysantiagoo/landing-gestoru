@@ -70,7 +70,7 @@ const ServiceDetailsFacturacion = () => {
                       <Link
                         className="theme-btn rounded-5 wow fadeInUp"
                         data-wow-delay=".4s"
-                        href="https://wa.me/573135219304?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20la%20facturación%20electrónica%20de%20Gestoru"
+                        href="https://wa.me/573226501735?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20la%20facturación%20electrónica%20de%20Gestoru"
                       >
                         Contactar por WhatsApp
                         <svg

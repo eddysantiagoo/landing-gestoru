@@ -23,7 +23,7 @@ const ServiceDetailsPos = () => {
           content="Con Gestoru tendrás un sistema que te permite agilizar las tareas relacionadas con la venta, facturación y el cobro de productos o servicios en tu negocio local. Tu inventario está siempre actualizado y digitalizado, controlando la entrada y salida de todos tus productos en tiempo real."
           FeatureList={featureList}
           btnname="Contactar por WhatsApp"
-          btnurl="https://wa.me/573135219304?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20el%20sistema%20POS%20de%20Gestoru"
+          btnurl="https://wa.me/573226501735?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20el%20sistema%20POS%20de%20Gestoru"
         />
       </section>
 
@@ -56,7 +56,7 @@ const ServiceDetailsPos = () => {
                       <Link
                         className="theme-btn rounded-5 wow fadeInUp"
                         data-wow-delay=".4s"
-                        href="https://wa.me/573135219304?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20el%20sistema%20POS%20de%20Gestoru"
+                        href="https://wa.me/573226501735?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20el%20sistema%20POS%20de%20Gestoru"
                       >
                         Contactar por WhatsApp
                         <svg
