@@ -110,7 +110,7 @@ const ContactInfo = () => {
                     <h3 className="title">
                       <a href="https://api.whatsapp.com/send?phone=+573226501735&text=Hola,%20quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20*Gestoru*">
                         {" "}
-                        +57 313 521 9304{" "}
+                        +57 3226501735{" "}
                       </a>
                     </h3>
 
