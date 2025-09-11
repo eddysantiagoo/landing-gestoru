@@ -57,7 +57,7 @@ export default function RootLayout({ children }) {
         <meta name="author" content="Gestoru Software" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://principal.gestoru.com/" />
-        <link rel="icon" href="/assets/images/favicon.png" sizes="32x32" />
+        <link rel="favicon" href="/assets/images/favicon.png" sizes="32x32" />
         <link rel="icon" href="/assets/images/favicon.png" sizes="192x192" />
         <link rel="apple-touch-icon" href="/assets/images/favicon.png" />
         <meta name="msapplication-TileImage" content="/assets/images/favicon.png" />
