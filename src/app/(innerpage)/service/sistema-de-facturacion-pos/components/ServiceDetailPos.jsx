@@ -42,12 +42,6 @@ const ServiceDetailsPos = () => {
                           data-wow-delay=".2s"
                         >
                           Gestoru - Sistema POS{" "}
-                          <Image
-                            src="/assets/images/icon/fireIcon.svg"
-                            alt="img"
-                            width={16}
-                            height={17}
-                          />
                         </div>
                         <h2 className="title wow fadeInUp" data-wow-delay=".4s">
                           ¿Qué beneficios tengo con el sistema de facturación POS?

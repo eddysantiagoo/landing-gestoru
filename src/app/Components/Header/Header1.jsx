@@ -66,7 +66,7 @@ export default function Header1({ variant }) {
 
               <a onClick={() => setSearchToggle(!searchToggle)} className="search-trigger search-icon"><i className="bi bi-search"></i></a>
                 <div className="header-button ms-4">
-                    <Link href="/contact" className="theme-btn">
+                    <Link href="https://gestoru.com/login" className="theme-btn">
                         <span>
                             Iniciar sesión
                             <i className="bi bi-arrow-right"></i>

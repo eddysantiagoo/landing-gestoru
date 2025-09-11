@@ -83,10 +83,10 @@ const Footer = () => {
                 <div className="contact-box">
                   <div className="subtitle">Dirección</div>
                   <div className="widget-head">¿Listo para empezar?</div>
-                  <div className="text">
+                  {/* <div className="text">
                     It is a long established fact that a reader will be
                     distracted layout.
-                  </div>
+                  </div> */}
                   <div className="info">
                     <div className="icon">
                       <svg
