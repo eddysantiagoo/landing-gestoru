@@ -57,7 +57,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link href="/service/sistema-de-facturacion-pos">
-                      Facturación electrónica
+                      Contacto
                     </Link>
                   </li>
                 </ul>
@@ -69,11 +69,20 @@ const Footer = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h3> Paginas Utilitarias </h3>
+                  <h3> Servicios </h3>
                 </div>
                 <ul className="list-area">
                   <li>
-                    <Link href="/contact">Contactanos</Link>
+                    <Link href="/contact">Facturacion</Link>
+                  </li>
+                  <li>
+                    <Link href="/contact">Documento Soporte</Link>
+                  </li>
+                      <li>
+                    <Link href="/contact">Facturacion POS</Link>
+                  </li>
+                      <li>
+                    <Link href="/contact">Nomina electronica</Link>
                   </li>
                 </ul>
               </div>

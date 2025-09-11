@@ -50,6 +50,7 @@ const Feature1 = () => {
                     <Image
                       src="/assets/images/wcu/wcuThumb1_1.webp"
                       alt="Gestoru"
+                      className="img-fluid"
                       width={376}
                       height={342}
                     />

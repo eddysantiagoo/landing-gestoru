@@ -53,7 +53,7 @@ const About1 = ({
                     />
                   </div>
                   <div className="main-thumb">
-                    <Image src={img1} alt="img" width={436} height={530} />
+                    <Image src={img1} alt="img" width={436} height={530} className="img-fluid" />
                   </div>
                   <div className="absolute-thumb float-bob-x">
                     {img2 && (

@@ -15,15 +15,15 @@ const Cta1 = ({
     <section className="cta-section ">
       <div className="cta-container-wrapper style1">
         <div className="container">
-          <div className="cta-wrapper style1  section-padding fix" style={{background: '#000924'}}>
-            <div className="shape1 d-none d-md-block">
+          <div className="cta-wrapper style1  section-padding fix" style={{background: '#000924', padding: '12px'} }>
+            {/* <div className="shape1 d-none d-md-block">
               <Image
                 src="/assets/images/shape/ctaShape1_1.png"
                 alt="img"
                 width={373}
                 height={147}
               />
-            </div>
+            </div> */}
             <div className="shape2 d-none d-md-block">
               <Image
                 src="/assets/images/shape/ctaShape1_2.png"
@@ -32,14 +32,14 @@ const Cta1 = ({
                 height={143}
               />
             </div>
-            <div className="shape3 d-none d-md-block">
+            {/* <div className="shape3 d-none d-md-block">
               <Image
                 src="/assets/images/shape/ctaShape1_3.png"
                 alt="img"
                 width={606}
                 height={272}
               />
-            </div>
+            </div> */}
             <div className="shape4 d-none d-md-block">
               <Image
                 src="/assets/images/shape/ctaShape1_4.png"
@@ -129,7 +129,7 @@ const Cta1 = ({
                 </div>
                 <div className="col-xl-4 order-1 order-xl-2">
                   <div className="cta-thumb wow fadeInUp" data-wow-delay=".2s">
-                    <Image src={img} alt="img" width={643} height={322} />
+                    <Image src={img} alt="img" width={693} height={372} />
                   </div>
                 </div>
               </div>
