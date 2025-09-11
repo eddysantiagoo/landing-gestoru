@@ -46,7 +46,7 @@ const Footer = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h3> Paginas </h3>
+                  <h3> Páginas </h3>
                 </div>
                 <ul className="list-area">
                   <li>
@@ -73,16 +73,16 @@ const Footer = () => {
                 </div>
                 <ul className="list-area">
                   <li>
-                    <Link href="/contact">Facturacion</Link>
+                    <Link href="/contact">Facturación</Link>
                   </li>
                   <li>
                     <Link href="/contact">Documento Soporte</Link>
                   </li>
                       <li>
-                    <Link href="/contact">Facturacion POS</Link>
+                    <Link href="/contact">Facturación POS</Link>
                   </li>
                       <li>
-                    <Link href="/contact">Nomina electronica</Link>
+                    <Link href="/contact">Nómina electrónica</Link>
                   </li>
                 </ul>
               </div>

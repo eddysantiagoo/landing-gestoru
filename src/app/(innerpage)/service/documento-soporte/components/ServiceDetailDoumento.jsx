@@ -99,7 +99,14 @@ const ServiceDetailDoumento = () => {
                           alt="img"
                           width={386}
                           height={503}
-                           className="img-fluid" 
+                          className="img-fluid" 
+                          style={{
+                            maxWidth: '100%',
+                            height: 'auto',
+                            '@media (max-width: 725px)': {
+                              left: '12px',
+                            }
+                          }}
                         />
                       </div>
                       <div className="thumb2">

@@ -14,7 +14,7 @@ const Pricing1 = () => {
                 <div className="subtitle">
                     Nuestros Precios 
                 </div>
-                <h2 className="title">¡Elige el Plan que se Adapte a Ti!</h2>
+                <h2 className="title" style={{textWrap: 'balance'}}>¡Elige el Plan que se Adapte a Ti!</h2>
                 <p className="text">Ofrecemos diferentes opciones de precios para satisfacer las necesidades de tu negocio
                 </p>
             </div>

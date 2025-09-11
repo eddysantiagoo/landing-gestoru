@@ -6813,6 +6813,14 @@ input.main-search-input::placeholder {
   margin-left: 30px;
   width: 100%;
 }
+
+@media (max-width: 767px) {
+  .wcu-wrapper.style3 .wcu-thumb .main-thumb {
+    margin-left: 0;
+    left: -40px;
+  }
+}
+
 .wcu-wrapper.style3 .wcu-thumb .main-thumb img {
   max-width: 100%;
 }

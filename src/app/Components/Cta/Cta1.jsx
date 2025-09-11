@@ -111,7 +111,7 @@ const Cta1 = ({
                           className="theme-btn style"
                           href={btnurl2}
                         >
-                          {btntext2 || "Contactanos"}
+                          {btntext2 || "Contáctanos"}
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
