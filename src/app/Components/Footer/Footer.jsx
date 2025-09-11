@@ -73,7 +73,7 @@ const Footer = () => {
                 </div>
                 <ul className="list-area">
                   <li>
-                    <Link href="/facturacion">Facturación</Link>
+                    <Link href="/service/facturacion">Facturación</Link>
                   </li>
                   <li>
                     <Link href="/service/documento-soporte">Documento Soporte</Link>
