@@ -24,11 +24,7 @@ const page = () => {
         btnurl="/contact"
         btntwo=""
         btn2url="/about"
-        cusimg="/assets/images/intro/introProfileThumb1_1.webp"
-        cusnumber="2,291"
-        cuscontent="Clientes satisfechos"
-        rating="5/5"
-        ratingcon="Rating"
+
         img="/assets/images/intro/introThumb1_1.webp"
       ></HeroBanner1>
       <Brand1></Brand1>

@@ -58,7 +58,7 @@ const HeroBanner1 = ({subtitle,title,content,btnname,btnurl,btntwo,btn2url,cusim
                                             </svg>
                                         </Link> */}
                                     </div>
-                                    <div className="fancy-box-wrapper style1">
+                                    {/* <div className="fancy-box-wrapper style1">
                                         <div className="fancy-box style1 wow fadeInUp" data-wow-delay=".2s">
                                             <div className="item">
                                             <Image src={cusimg} alt="img" width={136} height={61}   />
@@ -100,7 +100,7 @@ const HeroBanner1 = ({subtitle,title,content,btnname,btnurl,btntwo,btn2url,cusim
                                                 {ratingcon}
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             <div className="col-xl-5 order-1 order-xl-2">
