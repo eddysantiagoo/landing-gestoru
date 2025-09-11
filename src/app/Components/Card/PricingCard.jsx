@@ -25,7 +25,7 @@ const PricingCard = ({name,price,monthly,content,FeatureList,btnname,btnurl}) =>
 
                 </ul>
             </div>
-            <Link className="theme-btn style5" href={btnurl}> {btnname} </Link>
+            <Link className="theme-btn style4" href={btnurl}> {btnname} </Link>
         </div>
     </div>
     );

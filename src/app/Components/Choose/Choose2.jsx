@@ -13,19 +13,19 @@ const Choose2 = ({img1,img2,img3,subtitle,title,content,boximg1,boxtitle1,boxcon
                                     <div className="main-thumb img-custom-anim-right wow fadeInUp" data-wow-delay=".4s">
                                     <Image src={img1} alt="img" width={500} height={365}   />
                                     </div>
-                                    <div className="thumb2 float-bob-y">
+                                    {/* <div className="thumb2 float-bob-y">
                                     <Image src={img2} alt="img" width={215} height={206}   />
                                         </div>
                                     <div className="thumb3 float-bob-x">
                                     <Image src={img3} alt="img" width={208} height={206}   />
-                                        </div>
+                                        </div> */}
                                 </div>
                             </div>
                             <div className="col-xl-6">
                                 <div className="wcu-content">
                                     <div className="section-title">
                                         <div className="subtitle wow fadeInUp" data-wow-delay=".2s">
-                                            {subtitle} <Image src="/assets/images/icon/fireIcon.svg" alt="img" width={16} height={17}   />
+                                            {subtitle}
                                         </div>
                                         <h2 className="title wow fadeInUp" data-wow-delay=".4s">{title}</h2>
                                         <p className="text1 wow fadeInUp" data-wow-delay=".6s">{content}
