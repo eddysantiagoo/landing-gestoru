@@ -91,6 +91,7 @@ const ServiceDetailsPos = () => {
                         <Image
                           src="/assets/images/services/pos.webp"
                           alt="img"
+                           className="img-fluid" 
                           width={386}
                           height={503}
                         />

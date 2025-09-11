@@ -107,6 +107,7 @@ const ServiceDetailsFacturacion = () => {
                           alt="img"
                           width={386}
                           height={503}
+                           className="img-fluid" 
                         />
                       </div>
                       <div className="thumb2">

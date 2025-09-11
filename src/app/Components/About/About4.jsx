@@ -24,8 +24,8 @@ const About4 = ({img1,img2,subtitle,title,content,FeatureList,btnname,btnurl}) =
                                     <div className="thumbShape4 d-none d-xxl-block cir36">
                                     <Image src="/assets/images/shape/aboutThumbShape1_4.png" alt="img" width={28} height={28}   />
                                         </div>
-                                    <div className="main-thumb">
-                                    <Image src={img1} alt="img" width={436} height={530}   />
+                                    <div className="main-thumb">    
+                                      <Image src={img1} alt="img" width={436} height={530} className="img-fluid"   />
                                     </div>
                                     {/* <div className="absolute-thumb float-bob-x">
                                     <Image src={img2} alt="img" width={216} height={108}   />

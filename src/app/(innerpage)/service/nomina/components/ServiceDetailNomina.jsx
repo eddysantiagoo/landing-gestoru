@@ -96,6 +96,7 @@ const ServiceDetailNomina = () => {
                       >
                         <Image
                           src="/assets/images/services/nomina-2.webp"
+                           className="img-fluid" 
                           alt="img"
                           width={386}
                           height={503}
