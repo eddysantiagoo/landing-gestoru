@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer-section position-relative">
       <div className="footer-widgets-wrapper style1 fix">
-        <div className="shape1">
+        {/* <div className="shape1">
           <img src="/assets/images/shape/footerShape1_1.png" alt="shape" />
         </div>
         <div className="shape2">
@@ -13,7 +13,7 @@ const Footer = () => {
         </div>
         <div className="shape3">
           <img src="/assets/images/shape/footerShape1_3.png" alt="shape" />
-        </div>
+        </div> */}
         <div className="container">
           <div className="row">
             <div

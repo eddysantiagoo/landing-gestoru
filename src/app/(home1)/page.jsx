@@ -43,7 +43,7 @@ const page = () => {
           "Confiado por emprendedores y PYMEs en todo el país",
           "Pruébalo gratis por 30 días, sin tarjeta de crédito",
         ]}
-        btnname="Discover More"
+        btnname="Quienes somos"
         btnurl="/about"
       ></About1>
 
