@@ -18,7 +18,7 @@ const nunito = Nunito({
 export const metadata = {
   title: {
     absolute: '',
-    default: '▷ Software de Facturación Colombia │ Gestoru Software',
+    default: 'Software de Facturación Colombia │ Gestoru Software',
     template: '%s | Gestoru Software',
   },
   description: 'Software de facturación Colombia, una herramienta para PYMES y negocios independientes. Potencia y digitaliza tu marca. 100% Requisitos DIAN',
