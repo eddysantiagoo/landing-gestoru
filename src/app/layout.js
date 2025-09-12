@@ -32,7 +32,7 @@ export const metadata = {
     siteName: 'Gestoru Software',
     images: [
       {
-        url: '/assets/images/formulario.png',
+        url: '/assets/images/principal.gestoru.com.png',
         width: 1920,
         height: 1080,
         alt: 'Software de Factura Electrónica DIAN',
@@ -43,7 +43,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Software de Facturación Colombia │ Gestoru Software',
     description: 'Software de facturación Colombia, una herramienta para PYMES y negocios independientes. Potencia y digitaliza tu marca. 100% Requisitos DIAN',
-    images: ['/assets/images/formulario.png'],
+    images: ['/assets/images/principal.gestoru.com.png'],
   },
   verification: {
     google: 'S_I3Ft24V71qMEkKOEm94zZ0It3ZtYVNS1-HdlCwLw8',
