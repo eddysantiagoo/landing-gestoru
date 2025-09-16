@@ -76,13 +76,17 @@ const Footer = () => {
                     <Link href="/service/facturacion">Facturación</Link>
                   </li>
                   <li>
-                    <Link href="/service/documento-soporte">Documento Soporte</Link>
+                    <Link href="/service/documento-soporte">
+                      Documento Soporte
+                    </Link>
                   </li>
-                      <li>
-                    <Link href="/service/nomina">Facturación POS</Link>
+                  <li>
+                    <Link href="/service/sistema-de-facturacion-pos">
+                      Facturación POS
+                    </Link>
                   </li>
-                      <li>
-                    <Link href="/service/sistema-de-facturacion-pos">Nómina electrónica</Link>
+                  <li>
+                    <Link href="/service/nomina">Nómina electrónica</Link>
                   </li>
                 </ul>
               </div>
