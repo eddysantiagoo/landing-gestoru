@@ -1,4 +1,38 @@
+"use client";
+
 const ContactInfo = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    // Obtener los valores del formulario
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email2').value;
+    const message = document.getElementById('message').value;
+    
+    // Validar que los campos requeridos estén completos
+    if (!name || !email || !message) {
+      alert('Por favor completa todos los campos requeridos.');
+      return;
+    }
+    
+    // Construir el mensaje de WhatsApp
+    const whatsappMessage = `Hola, me llamo *${name}*
+
+Mi email: ${email}
+
+Mi mensaje:
+${message}
+
+Espero su respuesta. Gracias!`;
+    
+    // Codificar el mensaje para URL
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    
+    // Abrir WhatsApp con el mensaje
+    const whatsappURL = `https://api.whatsapp.com/send?phone=573226501735&text=${encodedMessage}`;
+    window.open(whatsappURL, '_blank');
+  };
+
   return (
     <div>
       <section className="contact-section section-padding fix">
@@ -148,7 +182,7 @@ const ContactInfo = () => {
                     Estamos aquí para ayudarte a llevar tu negocio al siguiente nivel con nuestras soluciones tecnológicas. Contáctanos hoy mismo.
                   </p>
 
-                  <form id="contact-form" className="contact-form-items">
+                  <form id="contact-form" className="contact-form-items" onSubmit={handleSubmit}>
                     <div className="row g-4">
                       <div
                         className="col-lg-6 wow fadeInUp"
@@ -161,6 +195,7 @@ const ContactInfo = () => {
                             name="name"
                             id="name"
                             placeholder="Tu Nombre"
+                            required
                           />
                         </div>
                       </div>
@@ -171,10 +206,11 @@ const ContactInfo = () => {
                         <div className="form-clt">
                           <span>Tu Email*</span>
                           <input
-                            type="text"
+                            type="email"
                             name="email2"
                             id="email2"
                             placeholder="Tu Email"
+                            required
                           />
                         </div>
                       </div>
@@ -188,6 +224,7 @@ const ContactInfo = () => {
                             name="message"
                             id="message"
                             placeholder="Escribe tu mensaje"
+                            required
                           ></textarea>
                         </div>
                       </div>
@@ -196,7 +233,7 @@ const ContactInfo = () => {
                         data-wow-delay=".9s"
                       >
                         <button type="submit" className="theme-btn">
-                          Enviar Mensaje <i className="bi bi-arrow-right"></i>
+                          Enviar por WhatsApp <i className="bi bi-whatsapp"></i>
                         </button>
                       </div>
                     </div>
