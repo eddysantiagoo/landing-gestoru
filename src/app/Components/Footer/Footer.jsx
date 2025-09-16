@@ -180,7 +180,7 @@ const Footer = () => {
         <div className="container">
           <div className="footer-wrapper d-flex align-items-center justify-content-between">
             <p className="wow fadeInLeft" data-wow-delay=".3s">
-              Copyright © 2024 Gestoru - All Rights Reserved.
+              Copyright © {new Date().getFullYear()}  Gestoru - All Rights Reserved.
             </p>
             <ul className="social-links" data-wow-delay=".5s">
               <li>

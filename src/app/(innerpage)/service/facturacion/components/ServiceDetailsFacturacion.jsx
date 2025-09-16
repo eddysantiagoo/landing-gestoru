@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import About4 from "../../../../Components/About/About4";
 import Choose3 from "../../../../Components/Choose/Choose3";
+import PricingCard from "@/app/Components/Card/PricingCard";
 
 const ServiceDetailsFacturacion = () => {
   const featureList = [
@@ -39,6 +40,70 @@ const ServiceDetailsFacturacion = () => {
             <div className="container">
               <div className="wcu-wrapper style3">
                 <div className="row gy-5 gx-60">
+
+                  {/* Pricing Section */}
+                  <div className="row gy-4 gx-3 justify-content-center align-items-stretch">
+                    <PricingCard
+                      name="Plan BÁSICO"
+                      price="$23.000"
+                      monthly="Mensual"
+                      content="Perfecto para pequeñas empresas que están iniciando con facturación electrónica."
+                      FeatureList={[
+                        "10 facturas mensuales",
+                        "Facturación electrónica DIAN",
+                        "Soporte básico",
+                        "Panel web",
+                      ]}
+                      btnname="Más Información"
+                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan BÁSICO de Gestoru"
+                    />
+
+                    <PricingCard
+                      name="Plan EMPRENDEDOR"
+                      price="$45.000"
+                      monthly="Mensual"
+                      content="Ideal para emprendedores que buscan hacer crecer su negocio digitalmente."
+                      FeatureList={[
+                        "100 facturas mensuales",
+                        "Facturación electrónica DIAN",
+                        "Soporte prioritario",
+                        "Reportes avanzados",
+                      ]}
+                      btnname="Más Información"
+                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan EMPRENDEDOR de Gestoru"
+                    />
+
+                    <PricingCard
+                      name="Plan PYME"
+                      price="$79.000"
+                      monthly="Mensual"
+                      content="Diseñado especialmente para pequeñas y medianas empresas en crecimiento."
+                      FeatureList={[
+                        "500 facturas mensuales",
+                        "Facturación electrónica DIAN",
+                        "Soporte especializado",
+                        "Reportes completos",
+                      ]}
+                      btnname="Más Información"
+                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan PYME de Gestoru"
+                    />
+
+                    <PricingCard
+                      name="Plan AVANZADO"
+                      price="$119.000"
+                      monthly="Mensual"
+                      content="Para empresas establecidas que manejan alto volumen de facturación."
+                      FeatureList={[
+                        "1000 facturas mensuales",
+                        "Facturación electrónica DIAN",
+                        "Soporte 24/7",
+                        "Reportes ejecutivos",
+                      ]}
+                      btnname="Más Información"
+                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan AVANZADO de Gestoru"
+                    />
+                  </div>
+
                   <div className="col-xl-6">
                     <div className="wcu-content">
                       <div className="section-title">
@@ -96,6 +161,7 @@ const ServiceDetailsFacturacion = () => {
                       </Link>
                     </div>
                   </div>
+
                   <div className="col-xl-6">
                     <div className="wcu-thumb">
                       <div
@@ -107,7 +173,7 @@ const ServiceDetailsFacturacion = () => {
                           alt="img"
                           width={386}
                           height={503}
-                           className="img-fluid" 
+                          className="img-fluid"
                         />
                       </div>
                       <div className="thumb2">
