@@ -55,7 +55,7 @@ const ServiceDetailsFacturacion = () => {
                         "Panel web",
                       ]}
                       btnname="Más Información"
-                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan BÁSICO de Gestoru"
+                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan BÁSICO facturación de Gestoru"
                     />
 
                     <PricingCard
@@ -70,7 +70,7 @@ const ServiceDetailsFacturacion = () => {
                         "Reportes avanzados",
                       ]}
                       btnname="Más Información"
-                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan EMPRENDEDOR de Gestoru"
+                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan EMPRENDEDOR facturación de Gestoru"
                     />
 
                     <PricingCard
@@ -85,7 +85,7 @@ const ServiceDetailsFacturacion = () => {
                         "Reportes completos",
                       ]}
                       btnname="Más Información"
-                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan PYME de Gestoru"
+                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan PYME facturación de Gestoru"
                     />
 
                     <PricingCard
@@ -100,7 +100,7 @@ const ServiceDetailsFacturacion = () => {
                         "Reportes ejecutivos",
                       ]}
                       btnname="Más Información"
-                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan AVANZADO de Gestoru"
+                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan AVANZADO facturación de Gestoru"
                     />
                   </div>
 

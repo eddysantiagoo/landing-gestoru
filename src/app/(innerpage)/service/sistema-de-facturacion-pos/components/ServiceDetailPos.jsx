@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import About4 from "../../../../Components/About/About4";
+import PricingCard from "@/app/Components/Card/PricingCard";
 
 const ServiceDetailsPos = () => {
   const featureList = [
@@ -34,6 +35,69 @@ const ServiceDetailsPos = () => {
             <div className="container">
               <div className="wcu-wrapper style3">
                 <div className="row gy-5 gx-60">
+                  {/* Pricing Section */}
+                  <div className="row gy-4 gx-3 justify-content-center align-items-stretch">
+                    <PricingCard
+                      name="POS BÁSICO"
+                      price="$59.000"
+                      monthly="Mensual"
+                      content="Plan con facturación mensual ilimitada para pequeños negocios."
+                      FeatureList={[
+                        "250 facturas mensuales",
+                        "Sistema POS completo",
+                        "Inventario automatizado",
+                        "Soporte básico",
+                      ]}
+                      btnname="Más Información"
+                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan POS BÁSICO de Gestoru"
+                    />
+
+                    <PricingCard
+                      name="POS EMPRENDEDOR"
+                      price="$119.000"
+                      monthly="Mensual"
+                      content="POS para empresas emprendedoras con mayor volumen de ventas."
+                      FeatureList={[
+                        "600 facturas mensuales",
+                        "Sistema POS avanzado",
+                        "Inventario en tiempo real",
+                        "Soporte prioritario",
+                      ]}
+                      btnname="Más Información"
+                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan POS EMPRENDEDOR de Gestoru"
+                    />
+
+                    <PricingCard
+                      name="POS PYME"
+                      price="$159.900"
+                      monthly="Mensual"
+                      content="POS diseñado para pequeñas y medianas empresas con alto volumen."
+                      FeatureList={[
+                        "1000 facturas mensuales",
+                        "Sistema POS profesional",
+                        "Reportes ejecutivos",
+                        "Soporte especializado",
+                      ]}
+                      btnname="Más Información"
+                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan POS PYME de Gestoru"
+                    />
+
+                    <PricingCard
+                      name="POS AVANZADO"
+                      price="$279.000"
+                      monthly="Mensual"
+                      content="POS para grandes empresas con máximo volumen de transacciones."
+                      FeatureList={[
+                        "2000 facturas mensuales",
+                        "Sistema POS empresarial",
+                        "Analytics avanzados",
+                        "Soporte 24/7",
+                      ]}
+                      btnname="Más Información"
+                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan POS AVANZADO de Gestoru"
+                    />
+                  </div>
+
                   <div className="col-xl-6">
                     <div className="wcu-content">
                       <div className="section-title">
@@ -44,13 +108,23 @@ const ServiceDetailsPos = () => {
                           Gestoru - Sistema POS{" "}
                         </div>
                         <h2 className="title wow fadeInUp" data-wow-delay=".4s">
-                          ¿Qué beneficios tengo con el sistema de facturación POS?
+                          ¿Qué beneficios tengo con el sistema de facturación
+                          POS?
                         </h2>
                         <p className="text1 wow fadeInUp" data-wow-delay=".6s">
-                          Agilizas tu proceso de venta al crear tus tirillas y facturas en segundos, simplificas el manejo de tus terminales de venta al gestionar todo desde un solo lugar. Ahorras tiempo al mantener tu inventario siempre actualizado y controlas ágilmente tu efectivo al realizar fácilmente cierres de turnos.
+                          Agilizas tu proceso de venta al crear tus tirillas y
+                          facturas en segundos, simplificas el manejo de tus
+                          terminales de venta al gestionar todo desde un solo
+                          lugar. Ahorras tiempo al mantener tu inventario
+                          siempre actualizado y controlas ágilmente tu efectivo
+                          al realizar fácilmente cierres de turnos.
                         </p>
                         <p className="text2 wow fadeInUp" data-wow-delay=".8s">
-                          Usa tu impresora conectada a nuestro sistema POS y utiliza todos los códigos de barra de tus productos. Con Gestoru, tienes acceso a facturas en tirilla con todos los requisitos DIAN, garantizando el cumplimiento legal de tu negocio.
+                          Usa tu impresora conectada a nuestro sistema POS y
+                          utiliza todos los códigos de barra de tus productos.
+                          Con Gestoru, tienes acceso a facturas en tirilla con
+                          todos los requisitos DIAN, garantizando el
+                          cumplimiento legal de tu negocio.
                         </p>
                       </div>
                       <Link
@@ -82,6 +156,7 @@ const ServiceDetailsPos = () => {
                       </Link>
                     </div>
                   </div>
+
                   <div className="col-xl-6">
                     <div className="wcu-thumb">
                       <div
@@ -91,7 +166,7 @@ const ServiceDetailsPos = () => {
                         <Image
                           src="/assets/images/services/pos.webp"
                           alt="img"
-                           className="img-fluid" 
+                          className="img-fluid"
                           width={386}
                           height={503}
                         />
