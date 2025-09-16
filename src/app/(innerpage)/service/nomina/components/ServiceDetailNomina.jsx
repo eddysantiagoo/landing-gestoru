@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import About4 from "../../../../Components/About/About4";
+import PricingCard from "@/app/Components/Card/PricingCard";
 
 const ServiceDetailNomina = () => {
   const featureList = [
@@ -34,6 +35,69 @@ const ServiceDetailNomina = () => {
             <div className="container">
               <div className="wcu-wrapper style3">
                 <div className="row gy-5 gx-60">
+                  {/* Pricing Section */}
+                  <div className="row gy-4 gx-3 justify-content-center align-items-stretch">
+                    <PricingCard
+                      name="NÓMINA BÁSICA"
+                      price="$20.000"
+                      monthly="Mensual"
+                      content="Plan nómina para pequeñas empresas que están iniciando."
+                      FeatureList={[
+                        "8 nóminas mensuales",
+                        "Nómina electrónica DIAN",
+                        "Automatización básica",
+                        "Soporte estándar",
+                      ]}
+                      btnname="Más Información"
+                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan NÓMINA BÁSICA de Gestoru"
+                    />
+
+                    <PricingCard
+                      name="NÓMINA EMPRENDEDOR"
+                      price="$35.000"
+                      monthly="Mensual"
+                      content="Plan para pequeñas y medianas empresas en crecimiento."
+                      FeatureList={[
+                        "15 nóminas mensuales",
+                        "Nómina electrónica DIAN",
+                        "Procesos automatizados",
+                        "Soporte prioritario",
+                      ]}
+                      btnname="Más Información"
+                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan NÓMINA EMPRENDEDOR de Gestoru"
+                    />
+
+                    <PricingCard
+                      name="NÓMINA PYME"
+                      price="$60.000"
+                      monthly="Mensual"
+                      content="Plan ideal para pequeñas y medianas empresas establecidas."
+                      FeatureList={[
+                        "25 nóminas mensuales",
+                        "Nómina electrónica DIAN",
+                        "Automatización completa",
+                        "Soporte especializado",
+                      ]}
+                      btnname="Más Información"
+                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan NÓMINA PYME de Gestoru"
+                    />
+
+                    <PricingCard
+                      name="NÓMINA AVANZADO"
+                      price="$90.000"
+                      monthly="Mensual"
+                      content="Plan ideal para grandes empresas con alto volumen de empleados."
+                      FeatureList={[
+                        "50 nóminas mensuales",
+                        "Nómina electrónica DIAN",
+                        "Gestión empresarial",
+                        "Soporte 24/7",
+                      ]}
+                      btnname="Más Información"
+                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan NÓMINA AVANZADO de Gestoru"
+                    />
+                  </div>
+
                   <div className="col-xl-6">
                     <div className="wcu-content">
                       <div className="section-title">
@@ -53,10 +117,18 @@ const ServiceDetailNomina = () => {
                           Automatización Total de Procesos
                         </h2>
                         <p className="text1 wow fadeInUp" data-wow-delay=".6s">
-                          Automatiza tus procesos de nómina electrónica con Gestoru. Nuestro sistema está completamente adaptado y certificado para cumplir con la normativa establecida por la DIAN, garantizando que tu empresa esté siempre al día con los requerimientos legales.
+                          Automatiza tus procesos de nómina electrónica con
+                          Gestoru. Nuestro sistema está completamente adaptado y
+                          certificado para cumplir con la normativa establecida
+                          por la DIAN, garantizando que tu empresa esté siempre
+                          al día con los requerimientos legales.
                         </p>
                         <p className="text2 wow fadeInUp" data-wow-delay=".8s">
-                          Actívate como generador de Nómina ante la DIAN de manera fácil y rápida. Con Gestoru tendrás todo lo necesario para implementar la nómina electrónica en tu empresa, cumpliendo al 100% con los requisitos de la DIAN.
+                          Actívate como generador de Nómina ante la DIAN de
+                          manera fácil y rápida. Con Gestoru tendrás todo lo
+                          necesario para implementar la nómina electrónica en tu
+                          empresa, cumpliendo al 100% con los requisitos de la
+                          DIAN.
                         </p>
                       </div>
                       <Link
@@ -88,6 +160,7 @@ const ServiceDetailNomina = () => {
                       </Link>
                     </div>
                   </div>
+
                   <div className="col-xl-6">
                     <div className="wcu-thumb">
                       <div
@@ -96,7 +169,7 @@ const ServiceDetailNomina = () => {
                       >
                         <Image
                           src="/assets/images/services/nomina-2.webp"
-                           className="img-fluid" 
+                          className="img-fluid"
                           alt="img"
                           width={386}
                           height={503}
