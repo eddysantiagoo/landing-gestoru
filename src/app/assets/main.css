@@ -10937,6 +10937,10 @@ textarea.is-invalid {
   background-color: #2b00a5;
 }
 }
+/* Ocultar botón de login móvil en desktop por defecto */
+.cs_nav .cs_nav_list .mobile-login-btn {
+  display: none !important;
+}
 @media screen and (max-width: 1550px) {
   .cs_site_header_full_width .container {
     padding: 0 30px;
@@ -10949,7 +10953,7 @@ textarea.is-invalid {
  }
   .cs_nav .cs_nav_list > li {
     margin-right: 35px;
- }
+  }
 }
 @media screen and (max-width: 1199px) {
  /*Mobile Menu Button*/
@@ -11010,7 +11014,25 @@ textarea.is-invalid {
   .cs_nav .cs_nav_list a {
     display: block;
     padding: 8px 20px;
- }
+  }
+  .cs_nav .cs_nav_list .mobile-login-btn {
+    display: block !important;
+    margin-top: 15px;
+    padding: 15px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .cs_nav .cs_nav_list .mobile-login-btn .theme-btn {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 12px 20px;
+  }
+  .cs_nav .cs_nav_list .mobile-login-btn .theme-btn span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
   .cs_nav .menu-item-has-children {
     position: relative;
  }

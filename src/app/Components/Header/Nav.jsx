@@ -52,6 +52,18 @@ export default function Nav({ setMobileToggle }) {
           Contáctanos
         </Link>
       </li>
+      <li className="mobile-login-btn">
+        <Link 
+          href="https://gestoru.com/login" 
+          className="theme-btn"
+          onClick={() => setMobileToggle(false)}
+        >
+          <span>
+            Iniciar sesión
+            <i className="bi bi-arrow-right"></i>
+          </span>
+        </Link>
+      </li>
     </ul>
   );
 }
