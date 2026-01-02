@@ -40,7 +40,7 @@ const Pricing1 = () => {
 
                             <PricingCard
                                 name="Plan Básico"
-                                price="$23.000"
+                                price="$25.900"
                                 monthly="Mensual"
                                 content="Perfecto para pequeñas empresas que necesitan funcionalidades"
                                 FeatureList={[
@@ -56,7 +56,7 @@ const Pricing1 = () => {
 
                             <PricingCard
                                 name="Plan Emprendedor"
-                                price="$45.000"
+                                price="$49.500"
                                 monthly="Mensual"
                                 content="Perfecto para emprendedores que buscan hacer crecer su negocio"
                                 FeatureList={[
@@ -72,7 +72,7 @@ const Pricing1 = () => {
 
                             <PricingCard
                                 name="Plan PYME"
-                                price="$99.900"
+                                price="$87.900"
                                 monthly="Mensual"
                                 content="Diseñado especialmente para pequeñas y medianas empresas"
                                 FeatureList={[
@@ -88,7 +88,7 @@ const Pricing1 = () => {
 
                             <PricingCard
                                 name="Plan Avanzado"
-                                price="$170.000"
+                                price="$124.900"
                                 monthly="Mensual"
                                 content="Para empresas que necesitan el máximo volumen de documentos"
                                 FeatureList={[
