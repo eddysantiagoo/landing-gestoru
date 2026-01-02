@@ -1,10 +1,14 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import About4 from "../../../../Components/About/About4";
 import Choose3 from "../../../../Components/Choose/Choose3";
 import PricingCard from "@/app/Components/Card/PricingCard";
 
 const ServiceDetailsFacturacion = () => {
+  const [isActive, setIsActive] = useState('yearly');
+  
   const featureList = [
     "Personalización completa de facturas",
     "Envío automatizado por correo electrónico",
@@ -42,66 +46,156 @@ const ServiceDetailsFacturacion = () => {
                 <div className="row gy-5 gx-60">
 
                   {/* Pricing Section */}
-                  <div className="row gy-4 gx-3 justify-content-center align-items-stretch">
-                    <PricingCard
-                      name="Plan BÁSICO"
-                      price="$25.900"
-                      monthly="Mensual"
-                      content="Perfecto para pequeñas empresas que están iniciando con facturación electrónica."
-                      FeatureList={[
-                        "10 facturas mensuales",
-                        "Facturación electrónica DIAN",
-                        "Soporte básico",
-                        "Panel web",
-                      ]}
-                      btnname="Más Información"
-                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan BÁSICO facturación de Gestoru"
-                    />
+                  <div className="pricing-wrapper style1">
+                    <div className="tab-section d-flex justify-content-center align-items-center">
+                      <ul className="nav nav-pills mb-3" id="pills-tab-facturacion" role="tablist">
+                        <li className={`nav-item ${isActive === 'monthly' ? 'active' : ''}`} onClick={() => setIsActive('monthly')} role="presentation">
+                          <button className={`nav-link ${isActive === 'monthly' ? 'active' : ''}`} id="pills-monthly-tab-facturacion" data-bs-toggle="pill"
+                            data-bs-target="#pills-monthly-facturacion" type="button" role="tab" aria-controls="pills-monthly-facturacion"
+                            aria-selected={isActive === 'monthly'}>Mensual</button>
+                        </li>
+                        <li className={`nav-item ${isActive === 'yearly' ? 'active' : ''}`} onClick={() => setIsActive('yearly')} role="presentation">
+                          <button className={`nav-link ${isActive === 'yearly' ? 'active' : ''}`} id="pills-yearly-tab-facturacion" data-bs-toggle="pill"
+                            data-bs-target="#pills-yearly-facturacion" type="button" role="tab" aria-controls="pills-yearly-facturacion"
+                            aria-selected={isActive === 'yearly'} tabIndex={isActive === 'yearly' ? "0" : "-1"}>Anual</button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="tab-content" id="pills-tabContent-facturacion">
+                      <div className={`tab-pane fade ${isActive === 'monthly' ? 'show active' : ''}`} id="pills-monthly-facturacion" role="tabpanel"
+                        aria-labelledby="pills-monthly-tab-facturacion">
+                        <div className="row gy-4 gx-3 justify-content-center align-items-stretch">
+                          <PricingCard
+                            name="Plan BÁSICO"
+                            price="$25.900"
+                            monthly="Mensual"
+                            content="Perfecto para pequeñas empresas que están iniciando con facturación electrónica."
+                            FeatureList={[
+                              "10 facturas mensuales",
+                              "Facturación electrónica DIAN",
+                              "Soporte básico",
+                              "Panel web",
+                            ]}
+                            btnname="Más Información"
+                            btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan BÁSICO facturación de Gestoru"
+                          />
 
-                    <PricingCard
-                      name="Plan EMPRENDEDOR"
-                      price="$49.500"
-                      monthly="Mensual"
-                      content="Ideal para emprendedores que buscan hacer crecer su negocio digitalmente."
-                      FeatureList={[
-                        "100 facturas mensuales",
-                        "Facturación electrónica DIAN",
-                        "Soporte prioritario",
-                        "Reportes avanzados",
-                      ]}
-                      btnname="Más Información"
-                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan EMPRENDEDOR facturación de Gestoru"
-                    />
+                          <PricingCard
+                            name="Plan EMPRENDEDOR"
+                            price="$49.500"
+                            monthly="Mensual"
+                            content="Ideal para emprendedores que buscan hacer crecer su negocio digitalmente."
+                            FeatureList={[
+                              "100 facturas mensuales",
+                              "Facturación electrónica DIAN",
+                              "Soporte prioritario",
+                              "Reportes avanzados",
+                            ]}
+                            btnname="Más Información"
+                            btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan EMPRENDEDOR facturación de Gestoru"
+                            recommended={true}
+                          />
 
-                    <PricingCard
-                      name="Plan PYME"
-                      price="$87.900"
-                      monthly="Mensual"
-                      content="Diseñado especialmente para pequeñas y medianas empresas en crecimiento."
-                      FeatureList={[
-                        "500 facturas mensuales",
-                        "Facturación electrónica DIAN",
-                        "Soporte especializado",
-                        "Reportes completos",
-                      ]}
-                      btnname="Más Información"
-                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan PYME facturación de Gestoru"
-                    />
+                          <PricingCard
+                            name="Plan PYME"
+                            price="$87.900"
+                            monthly="Mensual"
+                            content="Diseñado especialmente para pequeñas y medianas empresas en crecimiento."
+                            FeatureList={[
+                              "500 facturas mensuales",
+                              "Facturación electrónica DIAN",
+                              "Soporte especializado",
+                              "Reportes completos",
+                            ]}
+                            btnname="Más Información"
+                            btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan PYME facturación de Gestoru"
+                          />
 
-                    <PricingCard
-                      name="Plan AVANZADO"
-                      price="$124.900"
-                      monthly="Mensual"
-                      content="Para empresas establecidas que manejan alto volumen de facturación."
-                      FeatureList={[
-                        "1000 facturas mensuales",
-                        "Facturación electrónica DIAN",
-                        "Soporte 24/7",
-                        "Reportes ejecutivos",
-                      ]}
-                      btnname="Más Información"
-                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan AVANZADO facturación de Gestoru"
-                    />
+                          <PricingCard
+                            name="Plan AVANZADO"
+                            price="$124.900"
+                            monthly="Mensual"
+                            content="Para empresas establecidas que manejan alto volumen de facturación."
+                            FeatureList={[
+                              "1000 facturas mensuales",
+                              "Facturación electrónica DIAN",
+                              "Soporte 24/7",
+                              "Reportes ejecutivos",
+                            ]}
+                            btnname="Más Información"
+                            btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan AVANZADO facturación de Gestoru"
+                          />
+                        </div>
+                      </div>
+                      <div className={`tab-pane fade ${isActive === 'yearly' ? 'show active' : ''}`} id="pills-yearly-facturacion" role="tabpanel" aria-labelledby="pills-yearly-tab-facturacion">
+                        <div className="row gy-4 gx-3 justify-content-center align-items-stretch">
+                          <PricingCard
+                            name="Plan BÁSICO"
+                            price="$273.504"
+                            originalPrice="$310.800"
+                            monthly="Anual"
+                            content="Plan anual con descuento - Perfecto para pequeñas empresas."
+                            FeatureList={[
+                              "10 facturas mensuales",
+                              "Facturación electrónica DIAN",
+                              "Soporte básico",
+                              "Panel web",
+                            ]}
+                            btnname="Más Información"
+                            btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan BÁSICO facturación de Gestoru"
+                          />
+
+                          <PricingCard
+                            name="Plan EMPRENDEDOR"
+                            price="$522.720"
+                            originalPrice="$594.000"
+                            monthly="Anual"
+                            content="Plan anual emprendedor - Ahorra más con el pago anual."
+                            FeatureList={[
+                              "100 facturas mensuales",
+                              "Facturación electrónica DIAN",
+                              "Soporte prioritario",
+                              "Reportes avanzados",
+                            ]}
+                            btnname="Más Información"
+                            btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan EMPRENDEDOR facturación de Gestoru"
+                            recommended={true}
+                          />
+
+                          <PricingCard
+                            name="Plan PYME"
+                            price="$928.224"
+                            originalPrice="$1.054.800"
+                            monthly="Anual"
+                            content="Plan anual PYME - Máximo descuento para medianas empresas."
+                            FeatureList={[
+                              "500 facturas mensuales",
+                              "Facturación electrónica DIAN",
+                              "Soporte especializado",
+                              "Reportes completos",
+                            ]}
+                            btnname="Más Información"
+                            btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan PYME facturación de Gestoru"
+                          />
+
+                          <PricingCard
+                            name="Plan AVANZADO"
+                            price="$1.318.944"
+                            originalPrice="$1.498.800"
+                            monthly="Anual"
+                            content="Plan anual avanzado - Para empresas con alto volumen."
+                            FeatureList={[
+                              "1000 facturas mensuales",
+                              "Facturación electrónica DIAN",
+                              "Soporte 24/7",
+                              "Reportes ejecutivos",
+                            ]}
+                            btnname="Más Información"
+                            btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan AVANZADO facturación de Gestoru"
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
                   <div className="col-xl-6">

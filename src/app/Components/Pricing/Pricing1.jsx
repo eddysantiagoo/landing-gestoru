@@ -162,7 +162,7 @@ const Pricing1 = () => {
 
                             <PricingCard
                                 name="Plan Avanzado"
-                                price="$1.318.184"
+                                price="$1.318.944"
                                 originalPrice="$1.498.800"
                                 monthly="Anual"
                                 content="Plan anual avanzado - Para empresas que manejan alto volumen"
