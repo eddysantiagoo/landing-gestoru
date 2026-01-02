@@ -1,9 +1,13 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import About4 from "../../../../Components/About/About4";
 import PricingCard from "@/app/Components/Card/PricingCard";
 
 const ServiceDetailNomina = () => {
+  const [isActive, setIsActive] = useState('yearly');
+  
   const featureList = [
     "Automatización completa de procesos de nómina",
     "Cumplimiento 100% normativa DIAN",
@@ -36,66 +40,156 @@ const ServiceDetailNomina = () => {
               <div className="wcu-wrapper style3">
                 <div className="row gy-5 gx-60">
                   {/* Pricing Section */}
-                  <div className="row gy-4 gx-3 justify-content-center align-items-stretch">
-                    <PricingCard
-                      name="NÓMINA BÁSICA"
-                      price="$24.000"
-                      monthly="Mensual"
-                      content="Plan nómina para pequeñas empresas que están iniciando."
-                      FeatureList={[
-                        "8 nóminas mensuales",
-                        "Nómina electrónica DIAN",
-                        "Automatización básica",
-                        "Soporte estándar",
-                      ]}
-                      btnname="Más Información"
-                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan NÓMINA BÁSICA de Gestoru"
-                    />
+                  <div className="pricing-wrapper style1">
+                    <div className="tab-section d-flex justify-content-center align-items-center">
+                      <ul className="nav nav-pills mb-3" id="pills-tab-nomina" role="tablist">
+                        <li className={`nav-item ${isActive === 'monthly' ? 'active' : ''}`} onClick={() => setIsActive('monthly')} role="presentation">
+                          <button className={`nav-link ${isActive === 'monthly' ? 'active' : ''}`} id="pills-monthly-tab-nomina" data-bs-toggle="pill"
+                            data-bs-target="#pills-monthly-nomina" type="button" role="tab" aria-controls="pills-monthly-nomina"
+                            aria-selected={isActive === 'monthly'}>Mensual</button>
+                        </li>
+                        <li className={`nav-item ${isActive === 'yearly' ? 'active' : ''}`} onClick={() => setIsActive('yearly')} role="presentation">
+                          <button className={`nav-link ${isActive === 'yearly' ? 'active' : ''}`} id="pills-yearly-tab-nomina" data-bs-toggle="pill"
+                            data-bs-target="#pills-yearly-nomina" type="button" role="tab" aria-controls="pills-yearly-nomina"
+                            aria-selected={isActive === 'yearly'} tabIndex={isActive === 'yearly' ? "0" : "-1"}>Anual</button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="tab-content" id="pills-tabContent-nomina">
+                      <div className={`tab-pane fade ${isActive === 'monthly' ? 'show active' : ''}`} id="pills-monthly-nomina" role="tabpanel"
+                        aria-labelledby="pills-monthly-tab-nomina">
+                        <div className="row gy-4 gx-3 justify-content-center align-items-stretch">
+                          <PricingCard
+                            name="NÓMINA BÁSICA"
+                            price="$24.000"
+                            monthly="Mensual"
+                            content="Plan nómina para pequeñas empresas que están iniciando."
+                            FeatureList={[
+                              "8 nóminas mensuales",
+                              "Nómina electrónica DIAN",
+                              "Automatización básica",
+                              "Soporte estándar",
+                            ]}
+                            btnname="Más Información"
+                            btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan NÓMINA BÁSICA de Gestoru"
+                          />
 
-                    <PricingCard
-                      name="NÓMINA EMPRENDEDOR"
-                      price="$42.000"
-                      monthly="Mensual"
-                      content="Plan para pequeñas y medianas empresas en crecimiento."
-                      FeatureList={[
-                        "15 nóminas mensuales",
-                        "Nómina electrónica DIAN",
-                        "Procesos automatizados",
-                        "Soporte prioritario",
-                      ]}
-                      btnname="Más Información"
-                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan NÓMINA EMPRENDEDOR de Gestoru"
-                    />
+                          <PricingCard
+                            name="NÓMINA EMPRENDEDOR"
+                            price="$42.000"
+                            monthly="Mensual"
+                            content="Plan para pequeñas y medianas empresas en crecimiento."
+                            FeatureList={[
+                              "15 nóminas mensuales",
+                              "Nómina electrónica DIAN",
+                              "Procesos automatizados",
+                              "Soporte prioritario",
+                            ]}
+                            btnname="Más Información"
+                            btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan NÓMINA EMPRENDEDOR de Gestoru"
+                            recommended={true}
+                          />
 
-                    <PricingCard
-                      name="NÓMINA PYME"
-                      price="$72.000"
-                      monthly="Mensual"
-                      content="Plan ideal para pequeñas y medianas empresas establecidas."
-                      FeatureList={[
-                        "25 nóminas mensuales",
-                        "Nómina electrónica DIAN",
-                        "Automatización completa",
-                        "Soporte especializado",
-                      ]}
-                      btnname="Más Información"
-                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan NÓMINA PYME de Gestoru"
-                    />
+                          <PricingCard
+                            name="NÓMINA PYME"
+                            price="$72.000"
+                            monthly="Mensual"
+                            content="Plan ideal para pequeñas y medianas empresas establecidas."
+                            FeatureList={[
+                              "25 nóminas mensuales",
+                              "Nómina electrónica DIAN",
+                              "Automatización completa",
+                              "Soporte especializado",
+                            ]}
+                            btnname="Más Información"
+                            btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan NÓMINA PYME de Gestoru"
+                          />
 
-                    <PricingCard
-                      name="NÓMINA AVANZADO"
-                      price="$108.000"
-                      monthly="Mensual"
-                      content="Plan ideal para grandes empresas con alto volumen de empleados."
-                      FeatureList={[
-                        "50 nóminas mensuales",
-                        "Nómina electrónica DIAN",
-                        "Gestión empresarial",
-                        "Soporte 24/7",
-                      ]}
-                      btnname="Más Información"
-                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan NÓMINA AVANZADO de Gestoru"
-                    />
+                          <PricingCard
+                            name="NÓMINA AVANZADO"
+                            price="$108.000"
+                            monthly="Mensual"
+                            content="Plan ideal para grandes empresas con alto volumen de empleados."
+                            FeatureList={[
+                              "50 nóminas mensuales",
+                              "Nómina electrónica DIAN",
+                              "Gestión empresarial",
+                              "Soporte 24/7",
+                            ]}
+                            btnname="Más Información"
+                            btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan NÓMINA AVANZADO de Gestoru"
+                          />
+                        </div>
+                      </div>
+                      <div className={`tab-pane fade ${isActive === 'yearly' ? 'show active' : ''}`} id="pills-yearly-nomina" role="tabpanel" aria-labelledby="pills-yearly-tab-nomina">
+                        <div className="row gy-4 gx-3 justify-content-center align-items-stretch">
+                          <PricingCard
+                            name="NÓMINA BÁSICA"
+                            price="$253.440"
+                            originalPrice="$288.000"
+                            monthly="Anual"
+                            content="Plan anual con descuento - Perfecto para pequeñas empresas."
+                            FeatureList={[
+                              "8 nóminas mensuales",
+                              "Nómina electrónica DIAN",
+                              "Automatización básica",
+                              "Soporte estándar",
+                            ]}
+                            btnname="Más Información"
+                            btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan NÓMINA BÁSICA de Gestoru"
+                          />
+
+                          <PricingCard
+                            name="NÓMINA EMPRENDEDOR"
+                            price="$443.520"
+                            originalPrice="$504.000"
+                            monthly="Anual"
+                            content="Plan anual emprendedor - Ahorra más con el pago anual."
+                            FeatureList={[
+                              "15 nóminas mensuales",
+                              "Nómina electrónica DIAN",
+                              "Procesos automatizados",
+                              "Soporte prioritario",
+                            ]}
+                            btnname="Más Información"
+                            btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan NÓMINA EMPRENDEDOR de Gestoru"
+                            recommended={true}
+                          />
+
+                          <PricingCard
+                            name="NÓMINA PYME"
+                            price="$760.320"
+                            originalPrice="$864.000"
+                            monthly="Anual"
+                            content="Plan anual PYME - Máximo descuento para medianas empresas."
+                            FeatureList={[
+                              "25 nóminas mensuales",
+                              "Nómina electrónica DIAN",
+                              "Automatización completa",
+                              "Soporte especializado",
+                            ]}
+                            btnname="Más Información"
+                            btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan NÓMINA PYME de Gestoru"
+                          />
+
+                          <PricingCard
+                            name="NÓMINA AVANZADO"
+                            price="$1.141.440"
+                            originalPrice="$1.296.000"
+                            monthly="Anual"
+                            content="Plan anual avanzado - Para grandes empresas con alto volumen."
+                            FeatureList={[
+                              "50 nóminas mensuales",
+                              "Nómina electrónica DIAN",
+                              "Gestión empresarial",
+                              "Soporte 24/7",
+                            ]}
+                            btnname="Más Información"
+                            btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan NÓMINA AVANZADO de Gestoru"
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
                   <div className="col-xl-6">
