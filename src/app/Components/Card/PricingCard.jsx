@@ -1,9 +1,33 @@
 import Link from "next/link";
 
-const PricingCard = ({name,price,originalPrice,monthly,content,FeatureList,btnname,btnurl}) => {
+const PricingCard = ({name,price,originalPrice,monthly,content,FeatureList,btnname,btnurl,recommended}) => {
     return (
     <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-        <div className="pricing-card style1">
+        <div className="pricing-card style1" style={{position: 'relative'}}>
+            {recommended && (
+                <div style={{
+                    position: 'absolute',
+                    top: '-10px',
+                    right: '15px',
+                    backgroundColor: '#FFE5B4',
+                    color: '#D97706',
+                    padding: '0.2rem 0.8rem',
+                    borderRadius: '69px',
+                    fontSize: '0.85rem',
+                    fontWeight: '600',
+                    boxShadow: '0 2px 6px rgba(217, 119, 6, 0.15)',
+                    zIndex: 10,
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.25rem',
+                    letterSpacing: '0.3px'
+                }}>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                    </svg>
+                    Recomendado
+                </div>
+            )}
             <div className="pricing-card-header">
                 <h6>{name}</h6>
                 <div className="price-wrapper">

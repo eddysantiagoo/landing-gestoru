@@ -68,6 +68,7 @@ const Pricing1 = () => {
                                 ]} 
                                 btnname="Más Información"
                                 btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan Emprendedor de Gestoru"
+                                recommended={true}
                             ></PricingCard>
 
                             <PricingCard
@@ -139,6 +140,7 @@ const Pricing1 = () => {
                                 ]} 
                                 btnname="Más Información"
                                 btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan Emprendedor de Gestoru"
+                                recommended={true}
                             ></PricingCard>
 
                             <PricingCard
