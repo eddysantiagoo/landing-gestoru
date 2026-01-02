@@ -39,7 +39,7 @@ const ServiceDetailsPos = () => {
                   <div className="row gy-4 gx-3 justify-content-center align-items-stretch">
                     <PricingCard
                       name="POS BÁSICO"
-                      price="$59.000"
+                      price="$67.850"
                       monthly="Mensual"
                       content="Plan con facturación mensual ilimitada para pequeños negocios."
                       FeatureList={[
@@ -54,7 +54,7 @@ const ServiceDetailsPos = () => {
 
                     <PricingCard
                       name="POS EMPRENDEDOR"
-                      price="$119.000"
+                      price="$134.900"
                       monthly="Mensual"
                       content="POS para empresas emprendedoras con mayor volumen de ventas."
                       FeatureList={[
@@ -69,7 +69,7 @@ const ServiceDetailsPos = () => {
 
                     <PricingCard
                       name="POS PYME"
-                      price="$159.900"
+                      price="$183.900"
                       monthly="Mensual"
                       content="POS diseñado para pequeñas y medianas empresas con alto volumen."
                       FeatureList={[
@@ -84,7 +84,7 @@ const ServiceDetailsPos = () => {
 
                     <PricingCard
                       name="POS AVANZADO"
-                      price="$279.000"
+                      price="$299.000"
                       monthly="Mensual"
                       content="POS para grandes empresas con máximo volumen de transacciones."
                       FeatureList={[
