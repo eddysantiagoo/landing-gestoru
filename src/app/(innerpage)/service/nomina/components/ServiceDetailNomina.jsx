@@ -39,7 +39,7 @@ const ServiceDetailNomina = () => {
                   <div className="row gy-4 gx-3 justify-content-center align-items-stretch">
                     <PricingCard
                       name="NÓMINA BÁSICA"
-                      price="$20.000"
+                      price="$24.000"
                       monthly="Mensual"
                       content="Plan nómina para pequeñas empresas que están iniciando."
                       FeatureList={[
@@ -54,7 +54,7 @@ const ServiceDetailNomina = () => {
 
                     <PricingCard
                       name="NÓMINA EMPRENDEDOR"
-                      price="$35.000"
+                      price="$42.000"
                       monthly="Mensual"
                       content="Plan para pequeñas y medianas empresas en crecimiento."
                       FeatureList={[
@@ -69,7 +69,7 @@ const ServiceDetailNomina = () => {
 
                     <PricingCard
                       name="NÓMINA PYME"
-                      price="$60.000"
+                      price="$72.000"
                       monthly="Mensual"
                       content="Plan ideal para pequeñas y medianas empresas establecidas."
                       FeatureList={[
@@ -84,7 +84,7 @@ const ServiceDetailNomina = () => {
 
                     <PricingCard
                       name="NÓMINA AVANZADO"
-                      price="$90.000"
+                      price="$108.000"
                       monthly="Mensual"
                       content="Plan ideal para grandes empresas con alto volumen de empleados."
                       FeatureList={[
