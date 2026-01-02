@@ -1,9 +1,13 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import About4 from "../../../../Components/About/About4";
 import PricingCard from "@/app/Components/Card/PricingCard";
 
 const ServiceDetailsPos = () => {
+  const [isActive, setIsActive] = useState("yearly");
+
   const featureList = [
     "Personalización de la factura (Tirilla)",
     "Inventario automatizado y actualizado",
@@ -36,66 +40,208 @@ const ServiceDetailsPos = () => {
               <div className="wcu-wrapper style3">
                 <div className="row gy-5 gx-60">
                   {/* Pricing Section */}
-                  <div className="row gy-4 gx-3 justify-content-center align-items-stretch">
-                    <PricingCard
-                      name="POS BÁSICO"
-                      price="$67.850"
-                      monthly="Mensual"
-                      content="Plan con facturación mensual ilimitada para pequeños negocios."
-                      FeatureList={[
-                        "250 facturas mensuales",
-                        "Sistema POS completo",
-                        "Inventario automatizado",
-                        "Soporte básico",
-                      ]}
-                      btnname="Más Información"
-                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan POS BÁSICO de Gestoru"
-                    />
+                  <div className="pricing-wrapper style1">
+                    <div className="tab-section d-flex justify-content-center align-items-center">
+                      <ul
+                        className="nav nav-pills mb-3"
+                        id="pills-tab-pos"
+                        role="tablist"
+                      >
+                        <li
+                          className={`nav-item ${
+                            isActive === "monthly" ? "active" : ""
+                          }`}
+                          onClick={() => setIsActive("monthly")}
+                          role="presentation"
+                        >
+                          <button
+                            className={`nav-link ${
+                              isActive === "monthly" ? "active" : ""
+                            }`}
+                            id="pills-monthly-tab-pos"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-monthly-pos"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-monthly-pos"
+                            aria-selected={isActive === "monthly"}
+                          >
+                            Mensual
+                          </button>
+                        </li>
+                        <li
+                          className={`nav-item ${
+                            isActive === "yearly" ? "active" : ""
+                          }`}
+                          onClick={() => setIsActive("yearly")}
+                          role="presentation"
+                        >
+                          <button
+                            className={`nav-link ${
+                              isActive === "yearly" ? "active" : ""
+                            }`}
+                            id="pills-yearly-tab-pos"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-yearly-pos"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-yearly-pos"
+                            aria-selected={isActive === "yearly"}
+                            tabIndex={isActive === "yearly" ? "0" : "-1"}
+                          >
+                            Anual
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="tab-content" id="pills-tabContent-pos">
+                      <div
+                        className={`tab-pane fade ${
+                          isActive === "monthly" ? "show active" : ""
+                        }`}
+                        id="pills-monthly-pos"
+                        role="tabpanel"
+                        aria-labelledby="pills-monthly-tab-pos"
+                      >
+                        <div className="row gy-4 gx-3 justify-content-center align-items-stretch">
+                          <PricingCard
+                            name="POS BÁSICO"
+                            price="$67.850"
+                            monthly="Mensual"
+                            content="Plan con facturación mensual ilimitada para pequeños negocios."
+                            FeatureList={[
+                              "250 facturas mensuales",
+                              "Sistema POS completo",
+                              "Inventario automatizado",
+                              "Soporte básico",
+                            ]}
+                            btnname="Más Información"
+                            btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan POS BÁSICO de Gestoru"
+                          />
 
-                    <PricingCard
-                      name="POS EMPRENDEDOR"
-                      price="$134.900"
-                      monthly="Mensual"
-                      content="POS para empresas emprendedoras con mayor volumen de ventas."
-                      FeatureList={[
-                        "600 facturas mensuales",
-                        "Sistema POS avanzado",
-                        "Inventario en tiempo real",
-                        "Soporte prioritario",
-                      ]}
-                      btnname="Más Información"
-                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan POS EMPRENDEDOR de Gestoru"
-                    />
+                          <PricingCard
+                            name="POS EMPRENDEDOR"
+                            price="$134.900"
+                            monthly="Mensual"
+                            content="POS para empresas emprendedoras con mayor volumen de ventas."
+                            FeatureList={[
+                              "600 facturas mensuales",
+                              "Sistema POS avanzado",
+                              "Inventario en tiempo real",
+                              "Soporte prioritario",
+                            ]}
+                            btnname="Más Información"
+                            btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan POS EMPRENDEDOR de Gestoru"
+                            recommended={true}
+                          />
 
-                    <PricingCard
-                      name="POS PYME"
-                      price="$183.900"
-                      monthly="Mensual"
-                      content="POS diseñado para pequeñas y medianas empresas con alto volumen."
-                      FeatureList={[
-                        "1000 facturas mensuales",
-                        "Sistema POS profesional",
-                        "Reportes ejecutivos",
-                        "Soporte especializado",
-                      ]}
-                      btnname="Más Información"
-                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan POS PYME de Gestoru"
-                    />
+                          <PricingCard
+                            name="POS PYME"
+                            price="$183.900"
+                            monthly="Mensual"
+                            content="POS diseñado para pequeñas y medianas empresas con alto volumen."
+                            FeatureList={[
+                              "1000 facturas mensuales",
+                              "Sistema POS profesional",
+                              "Reportes ejecutivos",
+                              "Soporte especializado",
+                            ]}
+                            btnname="Más Información"
+                            btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan POS PYME de Gestoru"
+                          />
 
-                    <PricingCard
-                      name="POS AVANZADO"
-                      price="$299.000"
-                      monthly="Mensual"
-                      content="POS para grandes empresas con máximo volumen de transacciones."
-                      FeatureList={[
-                        "2000 facturas mensuales",
-                        "Sistema POS empresarial",
-                        "Analytics avanzados",
-                        "Soporte 24/7",
-                      ]}
-                      btnname="Más Información"
-                      btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan POS AVANZADO de Gestoru"
-                    />
+                          <PricingCard
+                            name="POS AVANZADO"
+                            price="$299.000"
+                            monthly="Mensual"
+                            content="POS para grandes empresas con máximo volumen de transacciones."
+                            FeatureList={[
+                              "2000 facturas mensuales",
+                              "Sistema POS empresarial",
+                              "Analytics avanzados",
+                              "Soporte 24/7",
+                            ]}
+                            btnname="Más Información"
+                            btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan POS AVANZADO de Gestoru"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        className={`tab-pane fade ${
+                          isActive === "yearly" ? "show active" : ""
+                        }`}
+                        id="pills-yearly-pos"
+                        role="tabpanel"
+                        aria-labelledby="pills-yearly-tab-pos"
+                      >
+                        <div className="row gy-4 gx-3 justify-content-center align-items-stretch">
+                          <PricingCard
+                            name="POS BÁSICO"
+                            price="$716.496"
+                            originalPrice="$814.200"
+                            monthly="Anual"
+                            content="Plan anual con descuento - Perfecto para pequeños negocios."
+                            FeatureList={[
+                              "250 facturas mensuales",
+                              "Sistema POS completo",
+                              "Inventario automatizado",
+                              "Soporte básico",
+                            ]}
+                            btnname="Más Información"
+                            btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan POS BÁSICO de Gestoru"
+                          />
+
+                          <PricingCard
+                            name="POS EMPRENDEDOR"
+                            price="$1.424.544"
+                            originalPrice="$1.618.800"
+                            monthly="Anual"
+                            content="Plan anual POS emprendedor - Ahorra más con el pago anual."
+                            FeatureList={[
+                              "600 facturas mensuales",
+                              "Sistema POS avanzado",
+                              "Inventario en tiempo real",
+                              "Soporte prioritario",
+                            ]}
+                            btnname="Más Información"
+                            btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan POS EMPRENDEDOR de Gestoru"
+                            recommended={true}
+                          />
+
+                          <PricingCard
+                            name="POS PYME"
+                            price="$1.941.984"
+                            originalPrice="$2.206.800"
+                            monthly="Anual"
+                            content="Plan anual PYME - Máximo descuento para medianas empresas."
+                            FeatureList={[
+                              "1000 facturas mensuales",
+                              "Sistema POS profesional",
+                              "Reportes ejecutivos",
+                              "Soporte especializado",
+                            ]}
+                            btnname="Más Información"
+                            btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan POS PYME de Gestoru"
+                          />
+
+                          <PricingCard
+                            name="POS AVANZADO"
+                            price="$3.157.440"
+                            originalPrice="$3.588.000"
+                            monthly="Anual"
+                            content="Plan anual avanzado - Para empresas con alto volumen."
+                            FeatureList={[
+                              "2000 facturas mensuales",
+                              "Sistema POS empresarial",
+                              "Analytics avanzados",
+                              "Soporte 24/7",
+                            ]}
+                            btnname="Más Información"
+                            btnurl="https://api.whatsapp.com/send/?phone=573226501735&text=Hola, me interesa conocer mas sobre el plan POS AVANZADO de Gestoru"
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
                   <div className="col-xl-6">
