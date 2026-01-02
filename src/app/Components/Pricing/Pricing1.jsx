@@ -110,6 +110,7 @@ const Pricing1 = () => {
                         <PricingCard
                                 name="Plan Básico"
                                 price="$273.504"
+                                originalPrice="$310.800"
                                 monthly="Anual"
                                 content="Ahorra con nuestro plan anual - Perfecto para pequeñas empresas"
                                 FeatureList={[
@@ -126,6 +127,7 @@ const Pricing1 = () => {
                             <PricingCard
                                 name="Plan Emprendedor"
                                 price="$522.720"
+                                originalPrice="$594.000"
                                 monthly="Anual"
                                 content="Plan anual para emprendedores - Ahorra más con el pago anual"
                                 FeatureList={[
@@ -142,6 +144,7 @@ const Pricing1 = () => {
                             <PricingCard
                                 name="Plan PYME"
                                 price="$928.224"
+                                originalPrice="$1.054.800"
                                 monthly="Anual"
                                 content="Plan anual PYME - Máximo descuento para medianas empresas"
                                 FeatureList={[
@@ -158,6 +161,7 @@ const Pricing1 = () => {
                             <PricingCard
                                 name="Plan Avanzado"
                                 price="$1.318.184"
+                                originalPrice="$1.498.800"
                                 monthly="Anual"
                                 content="Plan anual avanzado - Para empresas que manejan alto volumen"
                                 FeatureList={[

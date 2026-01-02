@@ -1,13 +1,23 @@
 import Link from "next/link";
 
-const PricingCard = ({name,price,monthly,content,FeatureList,btnname,btnurl}) => {
+const PricingCard = ({name,price,originalPrice,monthly,content,FeatureList,btnname,btnurl}) => {
     return (
     <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
         <div className="pricing-card style1">
             <div className="pricing-card-header">
                 <h6>{name}</h6>
                 <div className="price-wrapper">
+                    {originalPrice && (
+                        <div className="mb-2">
+                            <span className="text-decoration-line-through text-muted" style={{fontSize: '1.1rem', opacity: 0.7}}>{originalPrice}</span>
+                        </div>
+                    )}
                     <span className="price">{price}</span> <span className="text"> / {monthly}</span>
+                    {originalPrice && (
+                        <div className="mt-2">
+                            <span className="badge" style={{fontSize: '0.85rem', padding: '0.4rem 0.8rem', backgroundColor: '#D4F1E8', color: '#0D7C59', fontWeight: '600'}}>Ahorra 12%</span>
+                        </div>
+                    )}
                 </div>
                 <p className="text">{content}</p>
             </div>
