@@ -45,7 +45,7 @@ const ServiceDetailsFacturacion = () => {
                   <div className="row gy-4 gx-3 justify-content-center align-items-stretch">
                     <PricingCard
                       name="Plan BÁSICO"
-                      price="$23.000"
+                      price="$25.900"
                       monthly="Mensual"
                       content="Perfecto para pequeñas empresas que están iniciando con facturación electrónica."
                       FeatureList={[
@@ -60,7 +60,7 @@ const ServiceDetailsFacturacion = () => {
 
                     <PricingCard
                       name="Plan EMPRENDEDOR"
-                      price="$45.000"
+                      price="$49.500"
                       monthly="Mensual"
                       content="Ideal para emprendedores que buscan hacer crecer su negocio digitalmente."
                       FeatureList={[
@@ -75,7 +75,7 @@ const ServiceDetailsFacturacion = () => {
 
                     <PricingCard
                       name="Plan PYME"
-                      price="$79.000"
+                      price="$87.900"
                       monthly="Mensual"
                       content="Diseñado especialmente para pequeñas y medianas empresas en crecimiento."
                       FeatureList={[
@@ -90,7 +90,7 @@ const ServiceDetailsFacturacion = () => {
 
                     <PricingCard
                       name="Plan AVANZADO"
-                      price="$119.000"
+                      price="$124.900"
                       monthly="Mensual"
                       content="Para empresas establecidas que manejan alto volumen de facturación."
                       FeatureList={[
