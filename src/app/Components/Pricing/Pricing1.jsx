@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Pricing1 = () => {
 
-    const [isActive, setIsActive] = useState('monthly');
+    const [isActive, setIsActive] = useState('yearly');
 
     return (
         <section className="pricing-section section-padding pt-0 fix">
@@ -109,7 +109,7 @@ const Pricing1 = () => {
 
                         <PricingCard
                                 name="Plan Básico"
-                                price="$248.400"
+                                price="$273.504"
                                 monthly="Anual"
                                 content="Ahorra con nuestro plan anual - Perfecto para pequeñas empresas"
                                 FeatureList={[
@@ -125,7 +125,7 @@ const Pricing1 = () => {
 
                             <PricingCard
                                 name="Plan Emprendedor"
-                                price="$486.000"
+                                price="$522.720"
                                 monthly="Anual"
                                 content="Plan anual para emprendedores - Ahorra más con el pago anual"
                                 FeatureList={[
@@ -141,7 +141,7 @@ const Pricing1 = () => {
 
                             <PricingCard
                                 name="Plan PYME"
-                                price="$1.078.920"
+                                price="$928.224"
                                 monthly="Anual"
                                 content="Plan anual PYME - Máximo descuento para medianas empresas"
                                 FeatureList={[
@@ -157,7 +157,7 @@ const Pricing1 = () => {
 
                             <PricingCard
                                 name="Plan Avanzado"
-                                price="$1.836.000"
+                                price="$1.318.184"
                                 monthly="Anual"
                                 content="Plan anual avanzado - Para empresas que manejan alto volumen"
                                 FeatureList={[
